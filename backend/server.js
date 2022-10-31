@@ -1,25 +1,23 @@
+// Author: Pranjal Jain
+// Backend server routes
+require('dotenv').config();
 const express = require('express');
-const axios = require('axios').default;
-const cheerio = require('cheerio');
 const cors = require('cors');
+const jwtAuth = require('./routes/jwtAuth');
+const testRoute = require('./routes/testRoute');
+
 const app = express();
-const fs = require('fs');
-const bodyParser = require('body-parser');
-const path = require('path');
-var http = require('http').Server(app);
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-const { MongoClient } = require('mongodb');
 
-const uri = "mongodb+srv://CapstoneTeam4:Team4supplychain@cluster0.eenxx45.mongodb.net/test";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-var collection;
-var collection2;
+app.use(express.json());
 
-client.connect(err => {
-  console.log("succesfully connected!")
-  collection = client.db("Deloitte").collection("Technology");
-  collection2 = client.db("Deloitte").collection("Manufacturing"); 
+app.use(cors({
+  origin: '*',
+}));
+
+app.use('/auth', jwtAuth);
+app.use('/test', testRoute);
+
+const port = process.env.PORT;
+app.listen(port, () => {
+  console.log(`server is up at port ${port}`);
 });
-  
