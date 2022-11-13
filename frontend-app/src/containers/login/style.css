@@ -1,0 +1,7 @@
+a.sp-underline{
+    text-decoration: none;
+}
+
+a.sp-underline::hover{
+    text-decoration: underline;
+}
