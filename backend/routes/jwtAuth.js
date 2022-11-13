@@ -1,8 +1,8 @@
-// This code encrypts the password sent by user while registration and stores
-// user info into the DB
-// and validates the password entered by user from login with decrypted 
-// password from DB
-// eslint-disable-next-line new-cap
+/*
+ @Desc: This code encrypts the password sent by user while registration and stores
+  user info into the DB and validates the password entered by user from login
+  with decrypted password from DB
+*/
 const router = require('express').Router();
 const pool = require('../db');
 const bcrypt = require('bcrypt');
@@ -28,7 +28,7 @@ router.post('/register', validInfo, async (req, res) => {
       else {
         const saltRound = 10;
         const salt = await bcrypt.genSalt(saltRound);
-        
+        // Hashing the password
         const bcryptPassword = await bcrypt.hash(password, salt);
         console.log(bcryptPassword);
 
@@ -48,7 +48,7 @@ router.post('/register', validInfo, async (req, res) => {
     res.status(500).send('Server Error');
   };
 });
-
+//Login POST request
 router.post('/login', async (req, res) => {
   console.log("/Login Post");
   console.log(req.body);
@@ -59,8 +59,8 @@ router.post('/login', async (req, res) => {
 
   const validPass = await bcrypt.compare(req.body.password, user.password);
   if (!validPass) return res.status(401).send('Invalid Password');
-
-  const token  = jwt.sign({_id: user._id}, process.env.JWT_SECRET,  {expiresIn: '1hr'});
+  // sending back the auth token which will expire after 3hrs
+  const token  = jwt.sign({_id: user._id}, process.env.JWT_SECRET,  {expiresIn: '3hr'});
   res.header('auth-token', token).status(200).send({'token': token});
 
 });
