@@ -1,4 +1,8 @@
-// javascript login file for login functionality.
+/*
+@Desc : javascript login file for login functionality.
+@Author : Megha Rajpoot
+*/
+
 import React, { Component, Fragment} from 'react'
 import './style.css'
 
@@ -58,15 +62,15 @@ export default class Login extends Component {
         var that = this;
         fetch(request)
             .then(function (response) {
-                // check the response of the backend
+                // check the response of the backend error code
                 if (response.status === 401) throw new Error('Email or password not found');
                 else if (response.status === 403) throw new Error('User is already exist');
                 else if (response.status === 404) throw new Error('Not found');
                 
                 response.json().then(function (data) {
-                    console.log(data)
-                    localStorage.setItem('token', that.state.token);
-                    // localStorage.setItem('isLogged', 'true');
+                    //Setting the token in the local storage in order to use it further.
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('isLogged', 'true');
 
                     that.showSuccess('Sucessfully Logged In.');
                     // now that the user is logged in, we want them to be able to access certain parts of the website they could not access before
