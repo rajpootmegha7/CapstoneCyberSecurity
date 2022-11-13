@@ -54,14 +54,14 @@ router.post('/login', async (req, res) => {
   console.log(req.body);
 
   const user = await userSchema.findOne({email: req.body.email});
-  if (!user) return res.status(400).send('Email Not Found');
+  if (!user) return res.status(401).send('Email Not Found');
   console.log(user.password);
 
   const validPass = await bcrypt.compare(req.body.password, user.password);
-  if (!validPass) return res.status(400).send('Invalid Password');
+  if (!validPass) return res.status(401).send('Invalid Password');
 
   const token  = jwt.sign({_id: user._id}, process.env.JWT_SECRET,  {expiresIn: '1hr'});
-  res.header('auth-token', token).send(token);
+  res.header('auth-token', token).status(200).send({'token': token});
 
 });
 
