@@ -1,5 +1,6 @@
-// Author: Pranjal Jain
-// Backend server routes
+/*
+@Desc : Backend server connection file in order to create the default routes and port setup.
+*/
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -18,6 +19,8 @@ app.use('/auth', jwtAuth);
 app.use('/test', testRoute);
 
 const port = process.env.PORT;
+
+// Setting the port connection to 4000 for backend.
 app.listen(port, () => {
   console.log(`server is up at port ${port}`);
 });
