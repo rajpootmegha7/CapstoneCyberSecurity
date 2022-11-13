@@ -1,3 +1,6 @@
+/*
+@Desc: This file contains the user scema details format.
+*/
 const mongoose  = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
