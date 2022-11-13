@@ -1,6 +1,6 @@
-// Author: Pranjal Jain
-// This code checks for missing field in user request comming from login and
-// registration pages.
+/*
+@Desc: This code checks for missing field in user request comming from login and registration pages.
+*/
 module.exports = (req, res, next) => {
   // eslint-disable-next-line max-len
   const {username, email, password} = req.body;
