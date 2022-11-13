@@ -1,0 +1,61 @@
+/*style.css for register*/
+/*
+Style.css for register functionality
+*/
+
+#register_container {
+    width: 539px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    left: 50px;
+    }
+  
+  #form_input {
+      width: 100%;
+  }
+  .p-password {
+      width: 100%;
+  }
+  .p-password > .p-inputtext { 
+      width: 100%;
+  }
+  
+    #sign_in {
+      font-family: 'Lobster';
+      font-weight: 500;
+      font-size: 30px;
+      color: black;
+    }
+  
+  
+    #welcome {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: xxx-large;
+      color: #000000;
+    }
+    #welcome2 {
+      font-family: Poppins;
+      font-style: normal;
+      color: #7B61FF;
+      font-size: 21px;
+      margin-left: 5px;
+      line-height: 31px;  
+      border-radius: 25px;
+  
+  }
+  #label_text{
+    font-family: 'Lobster';
+    color: darkslategrey;
+    /* margin: 1px; */
+  }
+  
+  .button_submit {
+      padding: 15px;
+      padding-left: 0px;
+  }
+  
+  
+  
