@@ -2,7 +2,7 @@
 import { useD3 } from '../../hooks/useD3';
 import React, { Component, useState } from 'react'
 import * as d3 from 'd3'; 
-
+import * as flextree from 'd3-flextree';
 /* class Navbar extends React.Component {
 
 }
@@ -15,14 +15,29 @@ class Filters extends React.Component { /* need to devise filters based on info
   
 
   // var steps = ["Planning", "Supplying"]; /*array to store main supply chain steps for geenrating hexagons for each step*/
-  function Chart({ data }) {
+function Chart() {
   const ref = useD3(
     (svg) => {
       const height = 500;
       const width = 500;
       const margin = { top: 20, right: 30, bottom: 30, left: 40 };
-
-      const x = d3
+      const flextree = require('d3-flextree').flextree;
+      const layout = flextree();
+      const tree = layout.hierarchy({
+        size: [1, 1],
+        children: [
+          { size: [2, 4] },
+          { size: [3, 1],
+            children: [
+              { size: [4, 1] },
+            ],
+          },
+        ],
+      });
+    
+      layout(tree);
+      tree.each(node => console.log(`(${node.x}, ${node.y})`));
+      /* const x = d3
         .scaleBand()
         .domain(data.map((d) => d.year))
         .rangeRound([margin.left, width - margin.right])
@@ -74,9 +89,8 @@ class Filters extends React.Component { /* need to devise filters based on info
         .attr("x", (d) => x(d.year))
         .attr("width", x.bandwidth())
         .attr("y", (d) => y1(d.sales))
-        .attr("height", (d) => y1(0) - y1(d.sales));
-    },
-    [data.length]
+        .attr("height", (d) => y1(0) - y1(d.sales)); */
+    }
   );
 
   return (
@@ -90,9 +104,9 @@ class Filters extends React.Component { /* need to devise filters based on info
         marginLeft: "0px",
       }}
     >
-      <g className="plot-area" />
+      {/* <g className="plot-area" />
       <g className="x-axis" />
-      <g className="y-axis" />
+      <g className="y-axis" /> */}
       
     </svg>
       <p>This is Chart exp</p>
