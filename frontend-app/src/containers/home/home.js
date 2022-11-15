@@ -1,5 +1,5 @@
 // Java script file for interactive map on our home page.
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import Chart from './chart'
 import * as d3 from 'd3'; 
 
@@ -36,7 +36,7 @@ import * as d3 from 'd3';
   {year: 2017, efficiency: 39.4, sales: 6081000},
 ]
 
-class MainMap extends React.Component {
+/* class MainMap extends React.Component {
  render() {
   return (
     <div className="MainMap">
@@ -57,5 +57,11 @@ function Home() {
     )
 
   
+} */
+export default class Home extends Component {
+   render () {
+    return(
+      <Chart data={data} />
+    )
+   }
 }
-export default Home;
