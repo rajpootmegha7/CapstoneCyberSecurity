@@ -1,3 +1,10 @@
 /*
 HOME - interactive map CSS file
 */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
