@@ -1,5 +1,6 @@
-// Author: Pranjal Jain
-// code for generating the token using user_id
+/*
+@Desc : This is the code for generating the token.
+*/
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
@@ -9,7 +10,7 @@ function jwtGenerator(userId) {
     user: userId,
   };
 
-  return jwt.sign(payload, process.env.jwtSecret, {expiresIn: '1hr'});
+  return jwt.sign(payload, process.env.jwtSecret, {expiresIn: '3hr'});
 };
 
 module.exports = jwtGenerator;
