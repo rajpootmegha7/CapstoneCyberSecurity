@@ -1,7 +1,8 @@
 // Java script file for interactive map on our home page.
-import React, { Component, useState, useEffect } from 'react'
-import Map from './map'
-import * as d3 from 'd3'; 
+import React, { Component, useState, useEffect, useRef } from "react";
+import Map from "./map";
+import * as d3 from "d3";
+import "./style.css";
 
 /*  const data = [
   {year: 1980, efficiency: 24.3, sales: 8949000},
@@ -58,14 +59,37 @@ function Home() {
 
   
 } */
-export default class Home extends Component {
-   render () {
-    return(
 
-      <div>
-        <Map id="map"></Map>
-      </div>
+const initialData = {
+  name: "Automotive",
+  children: [
+    {
+      name: "Planning",
       
-    )
-   }
+    },
+    {
+      name: "Supply",
+    },
+    {
+      name: "Delivery",
+    },
+    {
+      name: "Customer Service",
+    },
+  ],
+  
+};
+
+function Home() {
+  const [data, setData] = useState(initialData);
+
+  return (
+    <React.Fragment>
+      <Map data={data} />
+      <button onClick={() => setData(initialData.children[0])}>
+        update data
+      </button>
+    </React.Fragment>
+  );
 }
+export default Home;
