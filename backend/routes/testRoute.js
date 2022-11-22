@@ -1,3 +1,7 @@
+/*
+@Desc : This file was created to use it later while creating other API's for technology and Manufacturing.
+*/
+
 const router = require('express').Router();
 const authorization = require('../middleware/authorization');
 const _db_client = require('../db')

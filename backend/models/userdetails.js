@@ -1,3 +1,6 @@
+/*
+@Desc: This file contains the user scema details format.
+*/
 const mongoose  = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
@@ -16,7 +19,7 @@ const UserSchema = new Schema({
         min: 6
     },
     password: {
-        type: String
+        type: String,
     }
 });
 
