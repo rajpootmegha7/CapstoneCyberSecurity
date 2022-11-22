@@ -1,0 +1,134 @@
+[
+  {
+    "Planning": {
+      "Threats/Risks": [
+        "•36% cited IP protection as top concern\n   •34% theft of intellectual property\n   •Because responsibility for IP protection falls to someone other than CISO or CIO",
+        "•Trying to gain access to ICS/OT networks or collecting organizational material",
+        "•Bad actors encrypt and steal data and Threaten to engage in a distributed denial of service attack against organization (triple extortion)",
+        "•ERYTHRITE targets organizations in Canada and US stealing user and administrative credentials for ICS/OT systems\n   •Search engine poisoning and deployment of credential stealing malware",
+        "•4/10 top threats involve employees\n   •75% lack skilled resources"
+      ],
+      "Solutions": [
+        "•Must develop different sets of requirements for each OEM",
+        "•50% perform ICS vulnerability testing less often than once a month"
+      ]
+    }
+  },
+  {
+    "Supplying": {
+      "Threats/Risks": [
+        "•Supplier vetting of personnel, particularly those with access to data, systems, or customer facilities",
+        "•Vendor vetting of service providers; ranging from janitorial services to system maintenance, anyone with access to company info",
+        "•Vendor vetting of products and software, especially products with embedded IT that will go into customer systems",
+        "•Cloud Services",
+        "•IoT",
+        "•Smart grid",
+        "•Future automotive technologies"
+      ],
+      "Solutions": [
+        "•People\n   •Restricting user access and train employees on best practices (source)",
+        "•Processes\n   •Supplier vetting: evaluating physical and cybersecurity processes, including having requirements in agreements and contracts\n   •Beyond tier 1: managing and centralizing supplier risk management\n   •Vendor management\n      •List here (for cyber vendors)",
+        "•Tech\n   •Hire third party vendors for supply chain mapping services"
+      ],
+      "Links": {
+        "href": [
+          "https://ieeexplore.ieee.org/document/8637299/",
+          "https://www.tripwire.com/state-of-security/auto-industry-higher-risk-cyberattacks",
+          "https://csrc.nist.gov/CSRC/media/Projects/Supply-Chain-Risk-Management/documents/briefings/Workshop-Brief-on-Cyber-SCRM-Vendor-Selection-and-Management.pdf"
+        ],
+        "title": [
+          "Future automotive technologies",
+          "source",
+          "for cyber vendors"
+        ]
+      }
+    }
+  },
+  {
+    "Inventory Management": {
+      "Threats/Risks": [
+        "•Stuxnet is first known software designed to interrupt operational technology",
+        "•Triton was first identified when used to override essential safety shut down equipment",
+        "•OT uses Internet of Things to keep functioning\n   •They are decades old that can’t receive remote updates unless owners take them offline\n   •Doing this threatens the uptime of physical processes. This makes it difficult for businesses to keep these assets secure as they online, so the growth of digital threats increases",
+        "•Only 20% say implementing a Secure Information and Event Management (SIEM) system is a priority",
+        "•Security is underdeveloped because operational technology (OT) external linking technology of modern technology is new",
+        "•Financial losses",
+        "•Company’s reputation gets damaged",
+        "Direct impact on market competitiveness and customer loyalty",
+        "•Internal vehicle communication system because they vary by manufacturer, year, model",
+        "•They include the CAN bus (often at high, mid, and low speeds to prioritize functionality according to the speed of messages), keyword protocol (KWP), ethernet, and others. The CAN bus is the most important because it is typically the network that transmits messages for drive-by-wire features, including steering, acceleration, and braking."
+      ],
+      "Solutions": [
+        "•Ability to recognize the threat and eliminate potential vulnerabilities in the system\n•Take inventory of all your devices and machines \n•Segment your network enough that it allows OT and IT to work together \n•Use vulnerability management\n•Use of encryption in addition to security standards, access control points, proper training on computer security systems, and raising awareness\n•Updated software, back up data, antivirus software, \n•Air gapping is a common approach to ICS security, when companies actually take the next step to test strategy and find fallacy. \n•Installing a network traffic monitoring and tampering alarm in the vehicle that detects unusual CAN messages (including messages sent at unusually high rates) and transmit a warning signal to fleet managers and manufacturer cybersecurity team\n•Implementing firewalls, whitelisting, and blacklisting of ECU messages to prevent unsafe commands \n•Employing secure coding practices and auditing the source code \n•Securing the entire vehicle’s networked functionalities with mechanical fail-safe mechanisms."
+      ]
+    }
+  },
+  {
+    "Manufacturing": {
+      "Threats/Risks": [
+        "•Top 10 (source)\n   •Theft of intellectual property\n   •Phishing, pharming, related variants\n   •Increasing sophistication and proliferation of threats\n   •Security breaches that involve a third party\n   •Social engineering\n   •Employee errors and omissions\n   •External financial fraud involving info systems\n   •Employee abuse of it systems and information\n   •Mobile devices\n   •Attacks exploiting mobile network vulnerabilities",
+        "•Ransomware\n   •49% of top 100 automotive manufacturers are highly susceptible to ransomware attacks",
+        "•Software Updates",
+        "•Software creation",
+        "•Software authenticity",
+        "•Digital car hacks/break ins (source)",
+        "•4/10 top cyberthreats directly due to internal employees; phishing/pharming, direct abuse of it systems, errors/omissions, user of mobile devices",
+        "•Smaller companies (<500M in revenue): direct employee threats",
+        "•Midsize (500m-5B in revenue): IP theft",
+        "•Large companies (<5b): phishing and farming threats, most often target financial gain or IP",
+        "•Smart cars",
+        "•Increased sophistication of cyber attacks",
+        "•Growing vulnerabilities in connected devices and IoT"
+      ],
+      "Solutions": [
+        "•People\n   •Restricting user access and train employees on best practices (source), talent and organizational management\n      •75% of employees lack skilled resources\n      •4 out of top 10 threats involve employees\n   •Executive and board level engagement\n      •Top-down, risk-based approach\n   •Attract and retain cybersecurity talent\n      •Clear ownership of a Chief information Security Officer responsibilities / other cybersecurity duties\n      •Cybersecurity Disclosure Act of 2015: requires all public companies to disclose the level of cybersecurity expertise in board of directors\n   •Actively work with legal to make sure customer agreements clearly clever roles and responsibilities for connected product data ownership, product breach incidents, and other customer responsibilities for cyber risks\n   •When working with third parties for cyber risk management, define requirements upfront in contracts and make sure there’s a right to audit against those requirements\n      •Visit third-party locations to gain assurance",
+        "•Processes\n   •Plan ahead before a breach occurs\n      •Include connected products in incident response plans\n      •Employ tactics like wargaming exercises\n      •Include ICS in incident response plans\n   •Perform ICS vulnerability testing at least once a month\n   •Perform a cyber risk assessment that includes enterprise, ICS, and connected products\n      •If one done in last 6 months: check if included advanced cyber risks like IP protection, ICS, connected products, and third-party risks related to industrial ecosystem relationships)\n   •Inventory, classify, and maintain IP and corresponding threats\n   •Reduce value of sensitive data to the threat actors\n   •Embed security-by-design principles and strong application security into process\n   •Privacy and data use policies (including cross-border transfer should be updated to reflect current 24/7 data collection)\n   •Assess and limit new feature sets to connected products before release\n   •Keep up previous data protection hygiene processes, like protecting data on collection, in transit and in storage on both device and storage\n   •Evaluate enterprise efforts like cyber threat monitoring, wargaming simulations to make sure they’re comprehensive enough to cover cyber risks",
+        "•Tech\n   •Regular updates of systems\n   •Using updated anti-malware software\n   •Secure Industry 4.0 systems in manufacturing plants\n   •Segmenting networks: all IoT devices should be run on separate systems\n   •Secure telematics vehicle systems\n   •Implement IP Protection at the data layer\n   •Connected products: encrypt data\n   •Data loss prevention programs"
+      ],
+      "Links": {
+        "href": [
+          "https://www2.deloitte.ccom/content/dam/Deloitte/us/Documents/manufacturing/us-manu-cyber-risk-in-advanced-manufacturing.pdfhttps://www2.deloitte.ccom/content/dam/Deloitte/us/Documents/manufacturing/us-manu-cyber-risk-in-advanced-manufacturing.pdf",
+          "https://www.securitymagazine.com/articles/97932-automotive-industry-races-against-cybersecurity-threats",
+          "https://ieeexplore.ieee.org/abstract/document/9138643/authors#authors"
+        ],
+        "title": [
+          "source",
+          "source",
+          "Smart cars"
+        ]
+      }
+    }
+  },
+  {
+    "Delivery": {
+      "Threats/Risks": [
+        "•Software platforms use application programming interfaces (APIs)",
+        "•APIs facilitate the activation of vehicle features and delivery of subscription-based services\n   •Remote unlock\n   •Remote start \n   •Enhanced entertainment",
+        "•Need to protect APIs from malicious actors seeking access to mission-critical systems and sensitive data",
+        "•Ransomware can be installed from USB port, CD/DVD port, Bluetooth, Wi-Fi at electric vehicle charging stations",
+        "•Distribution of vehicular ransomware malware",
+        "•Cyber criminals would send TOR-based botnet such as MIREI which provides more than 400,00 bot clients",
+        "•Are able to :\n   •Websites retrieved by vehicle, drive by downloads\n   •Messages retrieved and interpreted by vehicle (emails, SMS)\n   •Personal devices connected (smartphones, navigations)\n   •3rd party backend (insurance)\n   •3rd party device connected (trailers )\n   •Traffic infrastructures",
+        "•Smart grid"
+      ],
+      "Solutions": [
+        "•Secure the complete vehicle system (from individual ECU to connected cloud backend)",
+        "•Complete vehicle lifecycle (from first requirements analysis to vehicle phase out)",
+        "•Complete vehicle organization (from security processes to security governance)"
+      ]
+    }
+  },
+  {
+    "Customer Support": {
+      "Threats/Risks": [
+        "•Use ransomware or phishing to steal victims’ data",
+        "•Compromise customer database and leverage details to conduct follow up attacks\n   •Manufacturing data breach",
+        "•Over 50% of manufacturers have mobile apps with their connected product",
+        "•76% companies choose Wi-Fi to enable data flows between products which is highly hackable",
+        "•52% said their products are able to store/transmit confidential data including social security/banking information",
+        "•Could sell to a competing group, criminal enterprise, or nation state actor"
+      ],
+      "Solutions": ""
+    }
+  }
+]

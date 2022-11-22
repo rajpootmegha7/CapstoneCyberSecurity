@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const _db_client = mongoose.connect(
     'mongodb+srv://CapstoneTeam4:Team4supplychain@cluster0.eenxx45.mongodb.net',
     {useNewUrlParser: true, dbName: 'Deloitte'})
-    .then(result => {console.log('Connected to DB-Megha');})
+    .then(result => {console.log('Connected');})
     .catch((err)=>{console.log(err)})
 
 module.exports = _db_client;
+
