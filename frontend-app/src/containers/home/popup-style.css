@@ -9,7 +9,20 @@ Popup Style
     display: inline;
     padding-right: 5%;
 }
+.popup-nav ul li a {
+    text-decoration: none;
+}
+.popup-nav ul li a:hover {
+    text-decoration: underline;
+}
 
+.popup-nav ul li a:visited{
+    color: black;
+}
+.popup-nav ul li a:active{
+    text-weight: bold;
+    color: black;
+}
 .popuup-nav button {
     display: inline;
     float: right;

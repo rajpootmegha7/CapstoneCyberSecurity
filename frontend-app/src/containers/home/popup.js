@@ -13,7 +13,7 @@ export default class Popup extends Component{
                     <button>X</button> {/*close function*/}
                 </nav>
                 <div class="popup-text">
-                    <section id='risks'> 
+                    <section id='risks'> {/*style link function*/}
                         <ul>
                             <li>testing this is a fact about the cyber threat</li>
                             <li>testing this is a fact about the cyber threat</li>
