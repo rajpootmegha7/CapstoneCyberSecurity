@@ -3,6 +3,8 @@ import React, { Component, useState, useEffect, useRef } from "react";
 import Map from "./map";
 import * as d3 from "d3";
 import "./style.css";
+import Popup from "./popup";
+import "./popup-style.css"
 
 /*  const data = [
   {year: 1980, efficiency: 24.3, sales: 8949000},
@@ -89,6 +91,7 @@ function Home() {
       <button onClick={() => setData(initialData.children[0])}>
         update data
       </button>
+      <Popup></Popup>
     </React.Fragment>
   );
 }

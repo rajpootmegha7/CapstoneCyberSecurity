@@ -1,0 +1,28 @@
+/*
+Popup Style
+*/
+
+
+.popup-nav ul li {
+    text-align: left;
+    float: left;
+    display: inline;
+    padding-right: 5%;
+}
+
+.popuup-nav button {
+    display: inline;
+    float: right;
+    padding-right: none;
+
+}
+
+div.popup-window {
+    border: 2px solid black;
+    width: 80%;
+    background-color: #FDFDFD;
+}
+.popup-text {
+    text-align: left;
+}
+
