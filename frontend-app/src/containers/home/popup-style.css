@@ -33,7 +33,8 @@ Popup Style
 div.popup-window {
     border: 2px solid black;
     width: 80%;
-    background-color: #FDFDFD;
+    z-index: 4;
+    opacity: 100%;
 }
 .popup-text {
     text-align: left;

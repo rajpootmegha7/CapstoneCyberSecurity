@@ -91,7 +91,7 @@ function Home() {
       <button onClick={() => setData(initialData.children[0])}>
         update data
       </button>
-      <Popup></Popup>
+    
     </React.Fragment>
   );
 }

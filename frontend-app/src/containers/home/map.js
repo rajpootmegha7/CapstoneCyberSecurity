@@ -1,10 +1,11 @@
 // Java script file for interactive map on our home page.
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 // import * as d3 from 'd3'; 
 import { select, hierarchy, tree, linkHorizontal } from 'd3';
 import useResizeObserver from "../../useResizeObserver.js";
-
-
+import Popup from "./popup";
+import "./popup-style.css"
+import "./style.css"
 
 function usePrevious(value) {
   const ref = useRef();
@@ -13,14 +14,15 @@ function usePrevious(value) {
   });
   return ref.current;
 }
-
-
+ 
 function Map({ data }){
     const svgRef = useRef();
     const wrapperRef = useRef();
     const dimensions =  useResizeObserver(wrapperRef); // rray with width ad height
     
     const previouslyRenderedData = usePrevious(data);
+    const [show, setShow] = useState(false);
+
 
     useEffect(() => {
         const svg = select(svgRef.current);
@@ -83,11 +85,24 @@ function Map({ data }){
         
     }, [data, dimensions]);
 
-   
+    const handleClick = event => {
+      setShow(!show)
+    };
+    
     return (
        
         <div id="test" ref={wrapperRef} style={{marginBottom:"2rem"}}>
-            <svg ref={svgRef}></svg>
+             <svg ref={svgRef}></svg> 
+            <svg class height="110" width="300" onClick={handleClick}>
+              <polygon class="hex-step" points="300,150 225,280 75,280 0,150 75,20 225,20" fill='white' stroke="black"  stroke-width='5'></polygon>
+           </svg>
+
+           <svg class height="110" width="300" onClick={handleClick}>
+              <polygon class="hex-step" points="300,150 225,280 75,280 0,150 75,20 225,20" fill='white' stroke="black"  stroke-width='5'></polygon>
+           </svg>
+
+             {/* show component on click*/}
+            {show && <Popup></Popup>}
         </div>
     );
 

@@ -1,43 +1,52 @@
-import React, { Component, useEffect, useRef } from 'react' 
+import React, { Component, useEffect, useRef, useState } from 'react' 
 import "./popup-style.css"
 
-export default class Popup extends Component{
-    render(){
-        return (
-            <div class="popup-window">
-                <nav class = "popup-nav">
+
+// function useInitialState() {
+//    
+// }
+function Popup() {
+    const [show, setShow] = useState(true);
+    if(show) {return (
+      <div class="popup-window">
+            <nav class = "popup-nav">
+                <ul>
+                    <li><a href="#risks">CYBER THREATS</a></li>
+                    <li><a href="#mitigations">POTENTIAL MITIGATIONS</a></li>
+                </ul>
+                <button onClick= {() => setShow(!show)}>X</button> 
+            </nav>
+            <div class="popup-text">
+                <section class='risks ' id='current' > {/*style link function*/}
                     <ul>
-                        <li><a href="#risks">CYBER THREATS</a></li>
-                        <li><a href="#mitigations">POTENTIAL MITIGATIONS</a></li>
+                        <li class="decoration-dotted">testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
                     </ul>
-                    <button>X</button> {/*close function*/}
-                </nav>
-                <div class="popup-text">
-                    <section id='risks'> {/*style link function*/}
-                        <ul>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                        </ul>
-                    </section>
-                    <section id='mitigations'> 
-                        <ul>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                            <li>testing this is a fact about the cyber threat</li>
-                        </ul>
-                    </section>
-                   
-                </div>
+                </section>
+                <section class='mitigations'> 
+                    <ul>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                        <li>testing this is a fact about the cyber threat</li>
+                    </ul>
+                </section>
+                
             </div>
-     )
-        }
+        </div>
+
+        )}
+    
+    
+}
    
 
-}
+
+
+export default Popup;
