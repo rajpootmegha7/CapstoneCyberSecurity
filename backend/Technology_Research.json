@@ -36,7 +36,7 @@
         }
     },
     {
-        "Inventory Management": {
+        "InventoryManagement": {
             "Threats/Risks": [
                 "•IT administrators will manage all these tasks using simple excel sheet records",
                 "•Software installations can have viruses especially if not downloaded from a trusted source",
@@ -92,7 +92,7 @@
         }
     },
     {
-        "Customer Support": {
+        "CustomerSupport": {
             "Threats/Risks": [
                 "•Backdoors Embedded in Routine Maintenance Updates. 2020 – Thousands of public and private networks were infiltrated when a threat actor used a routine update to deliver a malicious backdoor.",
                 "•End-User Device Malware. 2012 – Researchers from a major U.S. software company investigating counterfeit software found malware preinstalled on 20 percent of devices they tested. The malware was installed in new desktop and laptop computers after they were shipped from a factory to a distributor, transporter, or reseller.",
