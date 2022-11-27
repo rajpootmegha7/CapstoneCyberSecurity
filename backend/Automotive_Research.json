@@ -45,7 +45,7 @@
     }
   },
   {
-    "Inventory Management": {
+    "InventoryManagement": {
       "Threats/Risks": [
         "•Stuxnet is first known software designed to interrupt operational technology",
         "•Triton was first identified when used to override essential safety shut down equipment",
@@ -119,8 +119,8 @@
     }
   },
   {
-    "Customer Support": {
-      "Threats/Risks": [
+    "CustomerSupport": {
+      "Risks": [
         "•Use ransomware or phishing to steal victims’ data",
         "•Compromise customer database and leverage details to conduct follow up attacks\n   •Manufacturing data breach",
         "•Over 50% of manufacturers have mobile apps with their connected product",
@@ -128,7 +128,14 @@
         "•52% said their products are able to store/transmit confidential data including social security/banking information",
         "•Could sell to a competing group, criminal enterprise, or nation state actor"
       ],
-      "Solutions": ""
+      "Mitigations": [
+        "•Ensure full traceability of software versions and vehicle configuration along the vehicle lifecycle",
+        "•Car data by customer is valuable to a lot of companies",
+        "•Car makers need to communicate testing results to 3rd party car sellers to create security requirements that vendors need to follow",
+        "•car creators and sellers should be open about sharing their cyber threats and solutions such as rental car companies",
+        "•Provide safe software updates that don't impact security"
+
+      ]
     }
   }
 ]
