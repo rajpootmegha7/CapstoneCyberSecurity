@@ -1,0 +1,42 @@
+/*
+Popup Style
+*/
+
+
+.popup-nav ul li {
+    text-align: left;
+    float: left;
+    display: inline;
+    padding-right: 5%;
+}
+.popup-nav ul li a {
+    text-decoration: none;
+}
+.popup-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.popup-nav ul li a:visited{
+    color: black;
+}
+.popup-nav ul li a:active{
+    text-weight: bold;
+    color: black;
+}
+.popuup-nav button {
+    display: inline;
+    float: right;
+    padding-right: none;
+
+}
+
+div.popup-window {
+    border: 2px solid black;
+    width: 80%;
+    z-index: 4;
+    opacity: 100%;
+}
+.popup-text {
+    text-align: left;
+}
+

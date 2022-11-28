@@ -102,7 +102,7 @@ function Map({ data }){
            </svg>
 
              {/* show component on click*/}
-            {show && <Popup></Popup>}
+            {show && <Popup></Popup>} */
         </div>
     );
 

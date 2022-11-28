@@ -3,10 +3,10 @@ import React, { Component, useState, useEffect, useRef } from "react";
 import Map from "./map";
 import * as d3 from "d3";
 import "./style.css";
-import Popup from "./popup";
-import "./popup-style.css"
-import Navbar from "../navbar/navbar";
-
+// import Popup from "./popup";
+// import "./popup-style.css"
+import Navbar from "../nav/navbar";
+import Footer2 from "../nav/footer ";
 
 
 const initialData = {
@@ -39,7 +39,7 @@ function Home() {
       <button onClick={() => setData(initialData.children[0])}>
         update data
       </button>
-    
+    <Footer2></Footer2>
     </React.Fragment>
   );
 }
