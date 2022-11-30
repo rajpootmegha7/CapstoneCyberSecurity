@@ -2,8 +2,8 @@
     margin-top: 200px;
 }
 
+
 .hexa-card {
-    /* position: absolute; */
     width: 150px;
     /* margin: 3px; */
     height: fit-content;
@@ -11,6 +11,7 @@
     padding: 20px 0px;
     border-radius: 15px;
     border-top: 2px solid lightgrey;
+    background: white;
 }
 .inner-content {
     width: auto;
@@ -23,7 +24,7 @@
 }
 .top-card{
     float: left;
-    border-right: 30px solid #CEF6FF;
+    border-right: 30px solid var(--c);
     border-top: 52px solid transparent;
     border-bottom: 52px solid transparent;
 }
@@ -31,12 +32,12 @@
 .mid-card {
     float: left;
     height: 104px;
-    background-color: #CEF6FF;
+    background-color: var(--c);
 }
 
 .bottom-card {
     float: left;
-    border-left: 30px solid #CEF6FF;
+    border-left: 30px solid var(--c);
     border-top: 52px solid transparent;
     border-bottom: 52px solid transparent;
 }
@@ -50,15 +51,15 @@
 
 #card-label {
     justify-content: center;
-    font-size: smaller;
+    font-size: small;
     border-color: gray;
-    background: gray;
-    color: white;
+    background: white;
+    color: #6366F1;
 }
 
 #card-label:hover {
-    border-color: lightgreen;
-    background: green;
+    border-color: white;
+    background: #6366F1;
     color: white;
 }
 

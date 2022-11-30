@@ -13,6 +13,15 @@ HOME - interactive map CSS file
     height: inherit;
     display: flex;
     justify-content: space-evenly;
+    /* background-image: url('../../images/Backimg.drawio.png');
+    background-repeat: no-repeat; */
+}
+
+.line-img {
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 78px;
+    z-index: -100;
 }
 .go-btn { 
     margin-left: 12px;
@@ -21,4 +30,39 @@ HOME - interactive map CSS file
 #type-btn:focus {
     background: #6366F1;
     color: white;
+}
+
+.home-entry {
+    height: 600px;
+    margin: 0px 15px;
+}
+
+.home-entry>.react-parallax >.react-parallax-content {
+    height: 50em;
+} 
+
+.supply-select>.react-parallax >.react-parallax-content {
+    height: 20em;
+    margin-top: 4em;
+}
+
+.supply-label {
+    color: gray;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    padding: 0px 30px;
+  }
+
+.entry-label {
+    font-size: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 60px;
+    margin-top: 3em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 5px 1px 3px rgb(0 0 0 / 60%);
 }

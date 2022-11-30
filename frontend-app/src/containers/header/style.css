@@ -1,0 +1,15 @@
+.header_cont{
+    height: 6em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.menu_cont {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 30%;
+    font-weight: 300;
+    align-items: inherit;
+}

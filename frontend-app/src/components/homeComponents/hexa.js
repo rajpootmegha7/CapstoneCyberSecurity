@@ -5,6 +5,7 @@ import supply from '../../images/inventory.png'
 import inventory from '../../images/inventory-1.png'
 import delivery from '../../images/delivery.png'
 import customer from '../../images/inventory-1.png'
+import manufacturing from '../../images/manu.png'
 
 
 import { Dialog } from 'primereact/dialog';
@@ -40,6 +41,8 @@ export default class Hexa extends Component {
                 return(<img className='hexa-img' src={inventory} alt='inventory'/>)
             case 'delivery':
                 return(<img className='hexa-img' src={delivery} alt='delivery'/>)
+            case 'manufacturing':
+                return(<img className='hexa-img' src={delivery} alt='manufacturing'/>)
             default:
                 return(<img className='hexa-img' src={customer} alt='customer'/>)
         }
@@ -149,17 +152,18 @@ export default class Hexa extends Component {
     const img_name = this.props.pimage
     const pname = this.props.pname
     const step = this.props.step
+    const pcolor = {"--c": this.props.pcolor, 'opacity': '0.8'}
     
     return (
        
     <div className='hexa-container'>
       <div className='hexa-card'>
         <div className='inner-content'>
-            <div className='top-card'></div>
-            <div className='mid-card'>
+            <div className='top-card' style={pcolor}></div>
+            <div className='mid-card' style={pcolor}>
                 {this.setHexaObject(img_name)}
             </div>
-            <div className='bottom-card'></div>
+            <div className='bottom-card' style={pcolor}></div>
         </div>
         <Button id="card-label" className='p-button-outlined p-button-secondary' onClick={()=>this.getContentData(pname)} >{pname}</Button>
         
