@@ -126,7 +126,7 @@ export default class Login extends Component {
                     </div>
                     <div className='register_link'>
                          <span id="no_account">
-                            <a className='l_btn' href="/Register"> Don't have an account? Register </a>
+                            <p class="inline text-sm">Don't have an account? </p><a  className='l_btn' href="/Register" class="inline text-sm underline">Register</a>
                     </span>
                     </div>
                    
