@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import Login from './containers/login/login'
 import Register from './containers/register/register'
 import Home from './containers/home/HomePage'
+import Logout from './containers/logout/logout'
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
           </Route>
           <Route path="/Login" exact component={Login} />
           <Route path="/Register" exact component={Register} />
-          <Route path="/Home" exact component={Home} />
+          <Route path='/Logout' exact component={Logout} />
+          <ProtectedRoute path='/Home' exact component={Home} />
         </Switch>
       </div>
     </BrowserRouter>
