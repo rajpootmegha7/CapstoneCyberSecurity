@@ -1,0 +1,67 @@
+.hexa-container:nth-of-type(odd) {
+    margin-top: 200px;
+}
+
+.hexa-card {
+    /* position: absolute; */
+    width: 150px;
+    /* margin: 3px; */
+    height: fit-content;
+    border-bottom: 2px solid lightgrey;
+    padding: 20px 0px;
+    border-radius: 15px;
+    border-top: 2px solid lightgrey;
+}
+.inner-content {
+    width: auto;
+    height: 110px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.top-card{
+    float: left;
+    border-right: 30px solid #CEF6FF;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.mid-card {
+    float: left;
+    height: 104px;
+    background-color: #CEF6FF;
+}
+
+.bottom-card {
+    float: left;
+    border-left: 30px solid #CEF6FF;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.hexa-img {
+    height: 4em;
+    width: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+#card-label {
+    justify-content: center;
+    font-size: smaller;
+    border-color: gray;
+    background: gray;
+    color: white;
+}
+
+#card-label:hover {
+    border-color: lightgreen;
+    background: green;
+    color: white;
+}
+
+.badge-step{
+    margin-top: 5px;
+}
