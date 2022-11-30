@@ -3,6 +3,9 @@ const Schema = mongoose.Schema;
 
 const AutoSchema = new Schema({
     name: {
+        type: String
+    },
+    data: {
         type: Object
     }
 });
