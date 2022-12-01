@@ -13,6 +13,7 @@ import { Button } from 'primereact/button';
 import { TabView, TabPanel } from 'primereact/tabview';
 import { Badge } from 'primereact/badge';
 
+
 export default class Hexa extends Component {
     constructor(props) {
       super(props)
@@ -29,6 +30,7 @@ export default class Hexa extends Component {
       this.onHide = this.onHide.bind(this);
       this.setDataForDialog = this.setDataForDialog.bind(this);
       this.getContentData = this.getContentData.bind(this)
+    //   console.log('and this here')
     }
 
     setHexaObject = (imgname) => {
@@ -99,17 +101,18 @@ export default class Hexa extends Component {
     }
 
     getContentData = (pname) => {
-        this.setState({supplyDataName: this.props.ptype})
+        // this.setState({supplyDataName: this.props.ptype})
         console.log('prop data: ', this.state.supplyDataName)
-        if( this.state.supplyDataName === null || this.state.supplyDataName.length === 0) return;
-        console.log('pcontentData ', pname, 'type ', this.state.supplyDataName)
+        console.log('dd', this.props.ptype)
+        // if( this.state.supplyDataName === null || this.state.supplyDataName.length === 0) return;
+        console.log('pcontentData ', pname, 'type ', this.props.ptype)
 
         var temp_risks = []
         var temp_mitigations = []
 
 
         // Post request to get the data from server
-        var req_data = {'supply_type': this.state.supplyDataName, 'suppy_name': pname.replace(/\s/g, '')}
+        var req_data = {'supply_type': this.props.ptype, 'suppy_name': pname.replace(/\s/g, '')}
         var request = new Request('http://localhost:4000/test/getSupplyData', {
             method: 'POST',
             headers: new Headers({ 'Content-Type': 'application/json' }),
@@ -120,12 +123,14 @@ export default class Hexa extends Component {
         var that = this;
         fetch(request)
             .then(function (response) {
+                console.log('request sent')
                 // check the response of the backend error code
                 if (response.status === 401) throw new Error('Email or password not found');
                 else if (response.status === 403) throw new Error('User is already exist');
                 else if (response.status === 404) throw new Error('Not found');
                 
                 response.json().then(function (resdata) {
+                    console.log('request being unpacked')
                     const data_obj = resdata.data
                     //Setting the token in the local storage in order to use it further.
                     data_obj["Risks"].map(item => {
@@ -148,12 +153,14 @@ export default class Hexa extends Component {
         
     }
   render() {
-    const supply_type = this.props.ptype
-    const img_name = this.props.pimage
-    const pname = this.props.pname
-    const step = this.props.step
-    const pcolor = {"--c": this.props.pcolor, 'opacity': '0.8'}
-    
+      
+      const supply_type = this.props.ptype
+      const img_name = this.props.pimage
+      const pname = this.props.pname
+      const step = this.props.step
+      const pcolor = {"--c": this.props.pcolor, 'opacity': '0.8'}
+      console.log('hexa rendered!',pname)
+      
     return (
        
     <div className='hexa-container'>
