@@ -20,7 +20,6 @@ export default class Hexa extends Component {
       this.state = {
         position: 'center',
         displayResponsive: false,
-        supplyDataName: "",
         riskData: [],
         mitigationData: [],
       }
@@ -82,8 +81,24 @@ export default class Hexa extends Component {
         console.log('Inside Risk Hexa', pcontentData)
         return(
             <ul>
-                {pcontentData.map(item => {
-                    return <p key="{item}" >{item}</p>
+                {pcontentData.map((item, counter) => {
+                    return(
+                        <li>
+                        <div className='data_container'>
+                            {/* <p key={counter + 1}> {item.split("Link-")[0]} </p> */}
+                            <p key={counter + 1}>
+                                {item.split("Link-")[0]}
+                                {item.split("Link-").length > 1 ? 
+                                <a className='data_link' href={item.split("Link-")[1]} target="_blank" rel="noreferrer">
+                                    [Link]
+                                </a>
+                                :
+                                null
+                                }
+                            </p>
+                        </div>
+                        </li>
+                    )
                 })}
             </ul>
         )   
@@ -92,24 +107,22 @@ export default class Hexa extends Component {
     setMitigationData = (pcontentData) => {
         console.log('Inside Mitigation Hexa', pcontentData)
         return(
-            <p>
+            <ul>
                 {pcontentData.map(item => {
-                    return <p key="{item}" >{item}</p>
+                    return <li key="{item}" >{item}</li>
                 })}
-            </p>
+            </ul>
         )     
     }
 
     getContentData = (pname) => {
-        // this.setState({supplyDataName: this.props.ptype})
-        console.log('prop data: ', this.state.supplyDataName)
-        console.log('dd', this.props.ptype)
-        // if( this.state.supplyDataName === null || this.state.supplyDataName.length === 0) return;
+        if( this.props.ptype === null) {
+            alert('Select the Supply Chain Type');
+            return;
+        }
         console.log('pcontentData ', pname, 'type ', this.props.ptype)
-
         var temp_risks = []
         var temp_mitigations = []
-
 
         // Post request to get the data from server
         var req_data = {'supply_type': this.props.ptype, 'suppy_name': pname.replace(/\s/g, '')}

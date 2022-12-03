@@ -66,3 +66,9 @@
 .badge-step{
     margin-top: 5px;
 }
+
+.data_link {
+    /* display: inline-flex; */
+    font-size: smaller;
+    color: #6366F1;
+}
