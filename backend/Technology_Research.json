@@ -1,12 +1,13 @@
 [
     {
-        "Planning": {
-            "Threats/Risks": [
+        "name": "Planning",
+        "data": {
+            "Risks": [
                 "•The infrastructure- or virtual/physical equipment on which the software operates- such as virtual machines, servers, storage, and networking devices are prone to misconfiguration errors, or errors due to poor construction of any component of the infrastructure.",
                 "•Cloud misconfiguration errors can lead to system outages which can give hackers time to plan and perform their cyber attacks",
                 "•Improper planning can lead to many cybersecurity vulnerabilities that will be very hard to undo once code becomes more complex"
             ],
-            "Solutions": [
+            "Mitigations": [
                 "•G2 Supply Chain Planning Software",
                 "•Have a team dedicated to taking the time to thoroughly investigate on which components to use especially dependencies and assess all vulnerabilities",
                 "•Synopsis Black Duck which offers its a Software Bill of Materials (SBOM) detailing the contents of one’s code, its origin, and any associated security or license risks.",
@@ -15,9 +16,10 @@
             ]
         }
     },
-    {
-        "Supplying": {
-            "Threats/Risks": [
+    {   
+        "name": "Supplying",
+        "data": {
+            "Risks": [
                 "•Anyone has access to open source code which means anyone can commit unwanted changes to the code",
                 "•Directly inserting malicious code to open source code",
                 "•Hacker taking over committer account",
@@ -28,7 +30,7 @@
                 "•Inserting backdoors for botnet access can lead to denial of service, or DDoS, attacks, stolen data, sent spam",
                 "•Dependencies can change at a more rapid pace which can pose unknown security risks at any time if developers do not stay up-to-date"
             ],
-            "Solutions": [
+            "Mitigations": [
                 "•Microsoft Defender Antivirus",
                 "•Patching dependencies and staying up-to-date with potential vulnerabilities of dependencies in use and patching software\n   •The following GitHub’s SCA (software composition analysis) tools can help manage dependencies in use:\n      •Dependency graph\n      •Dependabot alerts\n      •Dependabot security updates\n      •Dependabot version updates",
                 "•Synopsis products:\n   •Synopsys Black Duck® software composition analysis (SCA) helping teams manage the security, quality, and license compliance risks as a result using open source and third-party code in applications and containers. They also offer a Software Bill of Materials (SBOM) detailing the contents of one’s code, its origin, and any associated security or license risks.\n   •Coverity® is a fast, accurate, and highly scalable static application security testing (SAST) solution that helps development and security teams address security and quality defects early in the software development life cycle (SDLC), track and manage risks across the application portfolio, and ensure compliance with security and coding standards.\n   •WhiteHat Dynamic delivers fast and easy dynamic application security testing (DAST), optimized for developer needs."
@@ -36,64 +38,67 @@
         }
     },
     {
-        "InventoryManagement": {
-            "Threats/Risks": [
+        "name": "InventoryManagement",
+        "data": {
+            "Risks": [
                 "•IT administrators will manage all these tasks using simple excel sheet records",
                 "•Software installations can have viruses especially if not downloaded from a trusted source",
                 "•IT administrators managing all IT assets and software industry can become overwhelmed and stress leading to human errors which can create cybersecurity vulnerabilities",
                 "•Viruses from software installations can lead to entire databases being wiped out and ransomware attacks",
                 "•Security breaches of third parties where clients chose to host their SAM"
             ],
-            "Solutions": [
+            "Mitigations": [
                 "•Efficient IT Asset Management Software tools such as:\n   •Microsoft Defender Advanced Threat Protection\n   •Flexera SAM (Software Asset Management)\n   •ServiceNow SAM\n   •G2 SAM"
             ]
         }
     },
     {
-        "Manufacturing": {
-            "Threats/Risks": [
-                "•Intentional threats, whether from external injection attacks or malicious insiders, can be the most difficult to find, since they are often masked to appear as an already validated component.",
-                "•Trojan horses, bots, ransomware, cryptominers and spywares are often delivered as payloads via the more benignly introduced vulnerability types.",
-                "•SolarWinds. 2020 – An IT management company was infiltrated by a foreign threat actor who maintained persistence in its network for months. The threat actor left the network only after it had compromised the company’s build servers and used its update process to infiltrate customer networks.",
-                "•Seeding popular repositories with harmful packages, hacking into maintainer’s accounts to alter existing packages, or injecting code into compromised source repositories are frequently used methods of enabling backdoor access for an attack.",
-                "•Finding these attacks after deployment is typically too late, the damage has been done, and it can be very costly.",
-                "•Quantum computing is increasingly gaining traction, with big tech companies setting out plans to deliver high-powered quantum computing hardware in the next few years. The power of quantum computing could provide benefits for society in several ways, particularly when it comes to science, research, analyzing algorithms, as well as improving artificial intelligence and machine learning.\n   •But there's the risk that the rise of quantum computing poses a threat to traditional cybersecurity and encryption as we know it because quantum computers could break public-key cryptography -- it's something the White House has warned could be a threat to businesses and national security.",
-                "•5G-connected devices",
-                "•Ransomwares",
-                "•Phishing",
-                "•Insider Threats",
-                "•Telecommunicating•",
-                "•Malware",
-                "•Quantum threats"
+        "name": "Manufacturing",
+        "data" : {
+            "Risks": [
+                "According to NIST, Intentional threats, whether from external injection attacks or malicious insiders, can be the most difficult to find since they are often masked to appear as an already validated component. Attackers seeds popular repositories with harmful packages, hack into maintainers’ accounts to alter existing packages, or inject code into compromised source repositories are frequently used methods of enabling backdoor access for an attack. Finding these attacks after deployment is typically too late; the damage has been done, and it can be very costly. Link-https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf",
+                "For instance, Trojan horses, bots, ransomware, crypto miners, and spyware are often delivered as payloads via the more benignly introduced vulnerability types. Link-https://us-cert.cisa.gov/ncas/alerts/TA17-181A",
+                "An instance of a supply chain attack is SolarWinds. 2020 – An IT management company was infiltrated by a foreign threat actor who maintained persistence in its network for months. The threat actor left the network only after it had compromised the company’s build servers and used its update process to infiltrate customer networks. To learn more about this attack, use the attached reference. Link-https://en.wikipedia.org/wiki/SolarWinds",
+                "Quantum computing is increasingly gaining traction, with big tech companies setting out plans to deliver high-powered quantum computing hardware in the next few years. The power of quantum computing could provide benefits for society in several ways, particularly when it comes to science, research, analyzing algorithms, as well as improving artificial intelligence and machine learning. But there's the risk that the rise of quantum computing poses a threat to traditional cybersecurity and encryption as we know it because quantum computers could break public-key cryptography -- it's something the White House has warned could be a threat to businesses and national security. Link-https://www.infosecurity-magazine.com/news/quantum-computing-data-risk-cyber/",
+                "Below mentioned are the potential risks and vulnerable areas which could affect the supply chain during manufacturing:",
+                "5G-connected devices - In a world of interconnected networks, devices, and applications, every activity is a potential attack vector. This vulnerability is only heightened by the nature of 5G and its highly desirable attributes. The world’s hackers (good and bad) are already turning to the 5G ecosystem, as the just concluded DEFCON 2019 (the annual ethical “hacker Olympics”) illustrated. The targets of this year’s hacker villages included key parts of the 5G ecosystem such as: aviation, automobiles, infrastructure control systems, privacy, retail call centers and help desks, hardware in general, drones, IoT, and voting machines. Link-https://www.brookings.edu/research/why-5g-requires-new-approaches-to-cybersecurity/",
+                "Ransomware - According to Sonic wall Cyber threat 2022 report the ransomware in supply chain attacks has become more ruthless. They have attempted to cripple food networks, water supplies, and fuel distribution networks as well as hospitals and city governments. Link-https://online.maryville.edu/blog/supply-chain-attack/#:~:text=A%20supply%20chain%20attack%20breaks,its%20many%20suppliers%20and%20partners.",
+                "Phishing - Phishing is the most common attack vector and played a part in over a third of all breaches in 2021. One area where this type of attack is particularly on the rise is in the supply chain. By breaching one organization and exploiting its third-party connections, attackers can access dozens, or hundreds, of others. When attackers use phishing to target a supply chain, they often employ spear-phishing and social engineering techniques to make emails appear like they came from someone the recipient knows and trusts. Link-https://www.xorlab.com/en/blog/5-supply-chain-attacks-that-started-with-a-phishing-email-how-to-prevent-them",
+                "Insider Threats - According to National Counterintelligence and Security Center, it is important to note that insider threat programs target anomalous activities. Therefore national Insider threat rask force(NIITF) helps build in protection against infringing upon employees' civil rights, privacy and whistleblower protection. Link-https://www.dni.gov/index.php/ncsc-what-we-do/ncsc-supply-chain-threats",
+                "Malware - Supply chain attacks are an emerging kind of threat that target software developers and suppliers. The goal is to access source codes, build processes, or update mechanisms by infecting legitimate apps to distribute malware. Link-https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/supply-chain-malware?view=o365-worldwide"
             ],
-            "Solutions": [
-                "•Access control – Internal package repositories must limit write access to key roles and team members through permissions and secure authentication (including multi-factor authentication) that’s consistent across the organization.",
-                "•Proxy repositories – Caching external repositories (such as Maven Central and npm) can provide an immutable snapshot of third-party resources, so any subsequent malicious overwrite will be immediately evident.",
-                "•Testing and analysis – Sophisticated static and dynamic analysis tools can detect and flag malicious code and malicious behaviors of questionable packages. The JFrog security research team has uncovered and disclosed over 1300 malicious packages in public package repositories through tools it has developed."
+            "Mitigations": [
+                "Access control – Internal package repositories must limit write access to key roles and team members through permissions and secure authentication (including multi-factor authentication) that’s consistent across the organization. Link-https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf",
+                "Proxy repositories – Caching external repositories (such as Maven Central and npm) can provide an immutable snapshot of third-party resources, so any subsequent malicious overwrite will be immediately evident. Link- https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf",
+                "Testing and analysis – Sophisticated static and dynamic analysis tools can detect and flag malicious code and malicious behaviors of questionable packages. The JFrog security research team has uncovered and disclosed over 1300 malicious packages in public package repositories through tools it has developed. Link-https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf"
             ]
         }
     },
     {
-        "Delivery": {
-            "Threats/Risks": [
+        "name": "Delivery",
+        "data": {
+            "Risks": [
                 "•End-User Device Malware. 2012 – Researchers from a major U.S. software company investigating counterfeit software found malware preinstalled on 20 percent of devices they tested. The malware was installed in new desktop and laptop computers after they were shipped from a factory to a distributor, transporter, or reseller.",
                 "•The malware installed in new desktop and laptop computers after they were shipped from a factory to a distributor, transporter, or reseller are risky.",
                 "•Threat actor used a routine update to deliver a malicious backdoor.",
                 "•Malware"
             ],
-            "Solutions": [
-                "1. Establish an organization-wide HVA governance program.",
+            "Mitigations": [
+                " Below are the steps to mitigate",
+                ["1. Establish an organization-wide HVA governance program.",
                 "2. Identify and prioritize HVA information systems.",
                 "3. Consider the interconnectivity and dependencies of information systems when determining which systems are HVAs.",
                 "4. Develop a methodology for prioritizing HVAs based on criticality and mission importance.",
                 "5. Develop an assessment approach based on HVA prioritization.",
                 "6. Ensure timely remediation of identified vulnerabilities. Vendors can use the SSDF to prevent malicious software content or vulnerabilities from entering the cyber supply chain. NIST suggests practices to assist in protecting software and producing well secured software.\n   These include:\n      •Defining criteria for software security checks to help ensure that the software resulting from the SDLC meets the vendor’s expectations when it checks the software’s security during  development.\n      •Supplying software that satisfies security requirements and mitigates security risks through design decisions. \n      •Protecting code from unauthorized access and tampering.\n      •Verifying that third-party software, such as libraries and other packages incorporated into vendor code, complies with security requirements."
+                ]
             ]
         }
     },
     {
+        "name": "CustomerSupport",
         "CustomerSupport": {
-            "Threats/Risks": [
+            "Risks": [
                 "•Backdoors Embedded in Routine Maintenance Updates. 2020 – Thousands of public and private networks were infiltrated when a threat actor used a routine update to deliver a malicious backdoor.",
                 "•End-User Device Malware. 2012 – Researchers from a major U.S. software company investigating counterfeit software found malware preinstalled on 20 percent of devices they tested. The malware was installed in new desktop and laptop computers after they were shipped from a factory to a distributor, transporter, or reseller.",
                 "•In December 2020, the cybersecurity firm FireEye discovered a backdoor – subsequently named SUNBURST - in the SolarWinds Orion platform. Researchers later discovered that a threat actor used an implant, referred to as SUNSPOT, to access the build server and insert the backdoor. After spreading the backdoor to many customers via routine updates, the threat actor targeted select victim networks for follow-on actions, including the use of additional malware. This software supply chain attack provided the threat actor access to systems and data on numerous government and private sector networks. The threat actor was patient, thorough, and maintained excellent operational security throughout the process, making their presence very hard to detect. Overall, the threat actor maintained a light malware footprint, using legitimate credentials and remote access when possible.",
@@ -101,7 +106,7 @@
                 "•Backdoor",
                 "•Malware"
             ],
-            "Solutions": [
+            "Mitigations": [
                 "•Network defenders are limited in their ability to quickly mitigate consequences after a threat actor has compromised a software supply chain. This is because organizations rarely control their entire software supply chain and lack authority to compel every organization in their supply chain to take prompt mitigation steps.",
                 "•Due to the difficulty of mitigating consequences after a software supply chain attack occurs, network defenders should observe industry best practices before an attack has occurred.",
                 "•Implementing best practices will bolster an organization’s ability to prevent, mitigate, and respond to such attacks."
