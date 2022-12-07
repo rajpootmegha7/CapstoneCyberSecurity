@@ -9,23 +9,24 @@ import manufacturing from "../../images/manufacturing.png";
 import delivery from "../../images/delivery.png";
 import customer_support from "../../images/customer_support.png";
 import Header from "../header/Header";
+import '../../index.css';
 
 export default class General extends Component {
     render() {
         return (
             <Fragment>
-                <Header></Header>
+                <Navbar/>
                 <main role="main" class="">
                     <section class="pb-20 mt-0 font-dm-sans">
                         <div class="max-w-5xl px-20 mx-auto sm:px-30 md:px-50 lg:px-0">
-                            <h2 class="text-left mb-6 text-primary-dark-gray text-3xl font-semibold font-poppins pt-50">
+                            <h2 class="text-left mb-6 text-primary-dark-gray text-3xl font-semibold  pt-50">
                                 Automotive Manufacturing
                             </h2>
 
                             <div class="relative mt-20 lg:mt-24">
                                 <div class="container flex flex-col lg:flex-row gap-x-24">
                                     <div class="flex flex-1 flex-col items-start">
-                                        <h3 class="text-2xl text-left font-semibold font-poppins text-primary-dark-gray">
+                                        <h3 class="text-2xl text-left font-semibold  text-primary-dark-gray">
                                             Overview
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
