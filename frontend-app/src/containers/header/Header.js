@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from "react-router-dom";
-import logo_refernce from '../../images/delloite.png'
+import logo_reference from '../../images/deloitte.png'
 import './style.css'
 
 export default class Header extends Component {
@@ -32,7 +32,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className='header_cont'>
-                <div data-testid="header-test"><img src={logo_refernce} alt="CS Logo" width="100px" height="98px" /></div>
+                <div data-testid="header-test"><img src={logo_reference} alt="logo" width="100px" height="98px" /></div>
                 <div className='menu_cont'>
                     <Link id='0_btn' to='/home'>Home</Link>
                     <Link id='1_btn' to='/general_info' >General Info</Link>
