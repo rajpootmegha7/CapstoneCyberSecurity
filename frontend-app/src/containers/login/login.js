@@ -5,9 +5,8 @@
 
 import React, { Component, Fragment} from 'react'
 import './style.css'
-import logo_refernce from '../../images/delloite.png'
+import logo_reference from '../../images/deloitte.png'
 import login_background from '../../images/login-2.png'
-
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
@@ -91,7 +90,7 @@ export default class Login extends Component {
             <Toast ref={(el) => this.toast = el} />
             <div className="container">
                 <div className='li_image_container'>
-                    <img src={logo_refernce} alt="CS Logo" width="100px" height="98px" />
+                    <img src={logo_reference} alt="CS Logo" width="100px" height="98px" />
                 </div>
                 <div className='main_card'>
                     <div id="login_container">
