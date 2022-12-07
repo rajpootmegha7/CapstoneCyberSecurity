@@ -6,7 +6,7 @@ import Home from './containers/home/HomePage'
 import Logout from './containers/logout/logout'
 import ProtectedRoute from './components/ProtectedRoute';
 import General from './containers/general/general';
-import './index.css';
+
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/Login" exact component={Login} />
           <Route path="/Register" exact component={Register} />
           <Route path='/Logout' exact component={Logout} />
-          <Route path='/general_info' exact component={General} />
+          <ProtectedRoute path='/general_info' exact component={General} />
           <ProtectedRoute path='/Home' exact component={Home} />
         </Switch>
       </div>
