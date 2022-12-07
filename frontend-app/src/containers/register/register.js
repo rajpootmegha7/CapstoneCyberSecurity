@@ -5,7 +5,7 @@
 
 import React, { Component, Fragment} from 'react'
 import './style.css'
-import logo_refernce from '../../images/delloite.png'
+import logo_refernce from '../../images/deloitte.png'
 import login_background from '../../images/login-2.png'
 
 import { InputText } from 'primereact/inputtext';
