@@ -138,6 +138,7 @@ export default class Login extends Component {
                     </div>
                     <div className='login_back' >
                         <img src={login_background} alt="CS Logo" width="auto" height="580px" />
+
                     </div>
                 </div>
                 
