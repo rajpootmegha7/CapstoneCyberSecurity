@@ -90,7 +90,7 @@ export default class Login extends Component {
             <Toast ref={(el) => this.toast = el} />
             <div className="container">
                 <div className='li_image_container'>
-                    <img src={logo_reference} alt="CS Logo" width="100px" height="98px" />
+                    <img id="logo" src={logo_reference} alt="logo" width="100px" height="98px" />
                 </div>
                 <div className='main_card'>
                     <div id="login_container">
