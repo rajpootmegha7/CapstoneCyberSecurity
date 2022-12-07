@@ -15,7 +15,7 @@ export default class General extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar/>
+                <Header/>
                 <main role="main" class="">
                     <section class="pb-20 mt-0 font-dm-sans">
                         <div class="max-w-5xl px-20 mx-auto sm:px-30 md:px-50 lg:px-0">
