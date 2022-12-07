@@ -5,11 +5,14 @@
 
 import React, { Component, Fragment} from 'react'
 import './style.css'
+import logo_refernce from '../../images/delloite.png'
+import login_background from '../../images/login-2.png'
 
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
+
 
 export default class Login extends Component {
     
@@ -87,50 +90,59 @@ export default class Login extends Component {
             <Fragment>
             <Toast ref={(el) => this.toast = el} />
             <div className="container">
-                <div className='li_image_container'></div>
-                <div id="login_container">
-                    <div className="container_welcome">
-                        <p id="welcome2">Deloitte </p><p id="welcome"> Cyber Attacks Map</p>
-                    </div>
-                    <h1 data-testid="sign-in-test" id="sign_in">Sign in </h1>
-                    <span className="p_float_label">
-                    <p id='label_text'>Email Address</p>   
-                    <InputText
-                        id="form_input"
-                        placeholder='Email Address'
-                        value={this.state.email}
-                        onChange={(e) => this.setState({ email: e.target.value })}
-                        required
-                    />
-                    </span>
-                    <span className="p_float_label">
-                    <p id='label_text'>Username</p>   
-                    <InputText
-                        id="form_input"
-                        placeholder='Username'
-                        value={this.state.username}
-                        onChange={(e) => this.setState({ username: e.target.value })}
-                        required
-                    />
-                    </span>
-                    <p id='label_text'>Password</p>
-                    <Password 
-                        value={this.state.password}  
-                        placeholder='Password'
-                        onChange={(e) => this.setState({ password: e.target.value })} 
-                        toggleMask 
-                        required/>
-                    
-                    <div className='button_submit'>
-                        <Button  label=" Submit" icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
-                    </div>
-                    <div className='register_link'>
-                         <span id="no_account">
-                            <p class="inline text-sm">Don't have an account? </p><a  className='l_btn' href="/Register" class="inline text-sm underline">Register</a>
-                    </span>
-                    </div>
-                   
+                <div className='li_image_container'>
+                    <img src={logo_refernce} alt="CS Logo" width="100px" height="98px" />
                 </div>
+                <div className='main_card'>
+                    <div id="login_container">
+                        <div className="container_welcome">
+                            <p id="welcome"> Cyber Attacks Map</p>
+                        </div>
+                        <h1 data-testid="sign-in-test" id="sign_in">Sign in </h1>
+                        <span className="p_float_label">
+                        <p id='label_text'>Email Address</p>   
+                        <InputText
+                            id="form_input"
+                            placeholder='Email Address'
+                            value={this.state.email}
+                            onChange={(e) => this.setState({ email: e.target.value })}
+                            required
+                        />
+                        </span>
+                        <span className="p_float_label">
+                        <p id='label_text'>Username</p>   
+                        <InputText
+                            id="form_input"
+                            placeholder='Username'
+                            value={this.state.username}
+                            onChange={(e) => this.setState({ username: e.target.value })}
+                            required
+                        />
+                        </span>
+                        <p id='label_text'>Password</p>
+                        <Password 
+                            value={this.state.password}  
+                            placeholder='Password'
+                            onChange={(e) => this.setState({ password: e.target.value })} 
+                            toggleMask 
+                            required/>
+                        
+                        <div className='button_submit'>
+                            <Button  label=" Submit" icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
+                        </div>
+                        <div className='register_link'>
+                            <span id="no_account">
+                                <a className='l_btn' href="/Register"> Don't have an account? Register </a>
+                        </span>
+                        </div>
+                    
+                    </div>
+                    <div className='login_back' >
+                        <img src={login_background} alt="CS Logo" width="auto" height="580px" />
+
+                    </div>
+                </div>
+                
              
             </div>
    
