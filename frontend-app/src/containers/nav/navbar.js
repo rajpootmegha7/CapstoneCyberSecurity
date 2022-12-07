@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export default class Navbar extends Component {
     render() {
         return (
+            
             <nav class="sticky bg-gray-200">
                 <div class="mx-auto w-full px-2 sm:px-6 lg:px-8 " > {/* container div for nav */}
                     <div class="relative flex h-16 items-center justify-between"> {/* for nav ite,s*/}
