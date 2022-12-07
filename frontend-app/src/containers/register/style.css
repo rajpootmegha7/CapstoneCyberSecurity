@@ -7,7 +7,6 @@ Style.css for register functionality
     width: 539px;
     padding: 20px;
     text-align: left;
-    position: absolute;
     left: 50px;
     }
   
@@ -28,7 +27,6 @@ Style.css for register functionality
       color: black;
     }
   
-  
     #welcome {
       font-family: Poppins;
       font-style: normal;
@@ -36,16 +34,7 @@ Style.css for register functionality
       font-size: xxx-large;
       color: #000000;
     }
-    #welcome2 {
-      font-family: Poppins;
-      font-style: normal;
-      color: #7B61FF;
-      font-size: 21px;
-      margin-left: 5px;
-      line-height: 31px;  
-      border-radius: 25px;
-  
-  }
+   
   #label_text{
     font-family: 'Lobster';
     color: darkslategrey;
