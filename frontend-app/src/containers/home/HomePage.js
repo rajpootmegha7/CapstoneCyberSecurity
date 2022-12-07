@@ -32,18 +32,19 @@ export default function HomePage() {
         <Header />
         <div className='home-entry'> 
           <Parallax id="plx-1" bgImage={global} strength={500}>
-              <p className='entry-label'>Cyber Security Supply Chain Interactive Map</p>
+              <p className='entry-label' >Cyber Security Supply Chain Interactive Map</p>
           </Parallax>
         </div>
 
         <div className='supply-select'>
           <Parallax bgImage={white} strength={500}> 
-              <div className='supply-label'>Select Supply Chain Type</div>
+            
           </Parallax>
         </div>
 
         <div className='HomeContainer'>
           <div className='TypeCard'>
+                <p class="mb-2 px-4 font-inter text-lg">Select Supply Chain:</p>
                 <Button id="type-btn" className="p-button-rounded p-button-outlined go-btn p-button-lg" 
                         aria-label="Submit"
                         label='Automotive' onClick={setAutomotive}/>
@@ -54,12 +55,12 @@ export default function HomePage() {
 
             <div className='MainContentCard'>
                 <img className='line-img' src={lines} alt="no"></img>
-                <Hexa pname='Planning' pimage = 'planning' ptype = {supplyDataType} step = "1" pcolor = {"#BAEFD6"}/>
+                <Hexa pname='Planning' pimage = 'planning' ptype = {supplyDataType} step = "1" pcolor = {"#BAEFD6"} class='place-self-center'/>
                 <Hexa pname='Supplying' pimage = 'supply'  ptype = {supplyDataType} step = "2" pcolor = {"#4C7D66"}/>
                 <Hexa pname='Inventory Management' pimage = 'inventory' ptype = {supplyDataType} step = "3" pcolor = {"#CEF6FF"}/>
                 <Hexa pname='Manufacturing' pimage = 'manufacturing' ptype = {supplyDataType} step = "4" pcolor = {"#55B1C6"}/>
                 <Hexa pname='Delivery' pimage = 'delivery' ptype = {supplyDataType} step = "5" pcolor = {"#E8E4FF"}/>
-                <Hexa pname='CustomerSupport' pimage = 'customer' ptype = {supplyDataType} step = "6" pcolor = {"#3C317D"}/>
+                <Hexa pname='Customer Support' pimage = 'customer' ptype = {supplyDataType} step = "6" pcolor = {"#3C317D"}/>
             </div> 
 
             

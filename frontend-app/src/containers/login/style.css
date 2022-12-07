@@ -1,9 +1,20 @@
 /*
 Style.css for login functionality
 */
+body {
+  font-family: Sans-Serif;
+}
+p {
+  font-family: Sans-Serif;
+}
+h1 {
+  
+  font-family: Sans-Serif;
+}
 .container {
   height: 600px;
   width: auto;
+  font-family: Sans-Serif;
 }
 #login_container {
   width: 539px;
@@ -24,7 +35,7 @@ Style.css for login functionality
 }
 
   #sign_in {
-    font-family: 'Lobster';
+    font-family: Sans-Serif;
     font-weight: 500;
     font-size: 30px;
     color: black;
@@ -32,7 +43,7 @@ Style.css for login functionality
 
 
   #welcome {
-    font-family: Poppins;
+    font-family: Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: xxx-large;
@@ -41,7 +52,7 @@ Style.css for login functionality
   }
 
 #label_text{
-  font-family: 'Lobster';
+  font-family: Sans-Serif;
   color: darkslategrey;
   /* margin: 1px; */
 }
@@ -58,11 +69,12 @@ Style.css for login functionality
 
 .li_image_container {
   height: 6em;
-  background: whitesmoke;
+ 
 }
 
 .li_image_container > img {
   float: left;
+  
 }
 
 .main_card {

@@ -9,7 +9,8 @@
     height: fit-content;
     
     padding: 20px 0px;
-   
+    text-align: center;
+    align-items: center;
     border: none;
     background: white;
 }
@@ -50,25 +51,38 @@
 }
 
 #card-label {
+    margin-top: 10%;
     justify-content: center;
     font-size: small;
-    border-color: gray;
+    border-color: #6366F1;
     background: white;
     color: #6366F1;
+    text-align: center;
+    align-items: center;
+    
 }
 
-#card-label:hover {
-    border-color: white;
-    background: #6366F1;
-    color: white;
+#card-label:hover{
+    
+    text-decoration: underline;
 }
 
 .badge-step{
     margin-top: 5px;
+   
 }
 
 .data_link {
     /* display: inline-flex; */
     font-size: smaller;
     color: #6366F1;
+}
+.p-badge {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block;
+
 }

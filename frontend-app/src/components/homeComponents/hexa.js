@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
 import './style.css'
 import planning from '../../images/planning.png'
-import supply from '../../images/inventory.png'
-import inventory from '../../images/inventory-1.png'
+import supply from '../../images/supplying.png'
+import inventory from '../../images/inventory_management.png'
 import delivery from '../../images/delivery.png'
-import customer from '../../images/inventory-1.png'
-import manufacturing from '../../images/manu.png'
+import customer from '../../images/customer_support.png'
+import manufacturing from '../../images/manufacturing.png'
 
 
 import { Dialog } from 'primereact/dialog';
@@ -185,6 +185,7 @@ export default class Hexa extends Component {
             </div>
             <div className='bottom-card' style={pcolor}></div>
         </div>
+        <Badge className='badge-step' value={step} size="large"></Badge>
         <Button id="card-label" className='p-button-outlined p-button-secondary' onClick={()=>this.getContentData(pname)} >{pname}</Button>
         
         <Dialog header={pname} visible={this.state.displayResponsive} onHide={() => this.onHide('displayResponsive')} breakpoints={{'960px': '75vw'}} style={{width: '50vw'}} footer={this.renderFooter('displayResponsive')}>
@@ -200,7 +201,7 @@ export default class Hexa extends Component {
             </div>
         </Dialog>
       </div>
-      <Badge className='badge-step' value={step} size="large"></Badge>
+      
     </div>    
     )
   }
