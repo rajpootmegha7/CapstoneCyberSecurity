@@ -69,12 +69,14 @@ h1 {
 
 .li_image_container {
   height: 6em;
+  margin: 2%;
+  background: greysmoke;
  
 }
 
 .li_image_container > img {
   float: left;
-  
+  width: 5%;
 }
 
 .main_card {
