@@ -17,16 +17,24 @@ export default class General extends Component {
             <Fragment>
                 <Header/>
                 <main role="main" class="">
-                    <section class="pb-20 mt-0 font-dm-sans">
+                    <div class="max-w-5xl mb-4 mx-auto h-min">
+                        <div class="flex flex-col lg:flex-row h-min gap-x-10" >
+                                <p>QUICK JUMP:</p>
+                                <a href="#automotive_general_info">Automotive Manufacturing</a>
+                                <a href="#technology_general_info">Technology</a>
+                            </div>
+                    </div>
+                   
+                    <section id="automotive_general_info" class="pb-20 mt-0 font-dm-sans">
                         <div class="max-w-5xl px-20 mx-auto sm:px-30 md:px-50 lg:px-0">
                             <h2 class="text-left mb-6 text-primary-dark-gray text-3xl font-semibold  pt-50">
                                 Automotive Manufacturing
                             </h2>
 
-                            <div class="relative mt-20 lg:mt-24">
-                                <div class="container flex flex-col lg:flex-row gap-x-24">
-                                    <div class="flex flex-1 flex-col items-start">
-                                        <h3 class="text-2xl text-left font-semibold  text-primary-dark-gray">
+                            <div class="relative mt-20 lg:mt-24  h-min">
+                                <div class="flex flex-col lg:flex-row gap-x-24 gap-y-0 h-min mb-10">
+                                    <div class="flex flex-1 flex-col items-start py-0 mb-0  h-min ">
+                                        <h3 class="text-2xl text-left font-semibold text-primary-dark-gray">
                                             Overview
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
@@ -43,18 +51,17 @@ export default class General extends Component {
                                             continued checks on vechiles in use on the market. Unlike
                                             other industries, in the automotive supply chain,
                                             manufacturers (i.e., Original Equipment Manufacturers or
-                                            OEMS) rather than enterprises are held accountable for
-                                            cybersecurity failures.
+                                            OEMS) rather than enterprises are held accountable for.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex flex-1 flex-col items-start">
+                                <div class="flex flex-1 flex-col items-start mt-0">
                                     <h4 class="text-2xl font-semibold font-poppins text-primary-dark-gray py-0">
                                         General Regulations
                                     </h4>
                                     <ul class="text-left py-5 text-gray-600 list-disc text-md">
                                         <li class="text-gray-900 font-bold text-md">
-                                            <a
+                                            <a class="underline"
                                                 href="https://unece.org/wp29-introduction"
                                                 target="_blank"
                                             >
@@ -64,10 +71,17 @@ export default class General extends Component {
                                             vehicles, systems, parts and equipment), includes
                                             performance tests and administrative procedures. Affects:
                                             approval, production conformity for manufacturers,
-                                            Contracting Parties
+                                            Contracting Parties.
                                         </li>
                                         <li>
-                                            UN Global Technical Regulations (GTRs): global performance
+                                             <a
+                                                class="text-gray-600 text-md underline"
+                                                href="https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs"
+                                                target="_blank"
+                                            >
+                                                 UN Global Technical Regulations (GTRs)
+                                            </a>
+                                             : global performance
                                             requirements and test procedures
                                         </li>
                                         <li>
@@ -120,7 +134,7 @@ export default class General extends Component {
                                     </ul>
                                     <ul class="text-left text-gray-600 list-disc">
                                         <li class="text-gray-900 font-bold">
-                                            <a
+                                            <a  class="underline"
                                                 href="https://www2.deloitte.com/content/dam/Deloitte/us/Documents/manufacturing/us-manu-cyber-risk-in-advanced-manufacturing.pdf#page=18"
                                                 target="_blank"
                                             >
@@ -152,7 +166,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-40 lg:mt-52">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -171,18 +185,18 @@ export default class General extends Component {
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             The planning state in the automotive supply chain is
                                             crtitical because it sets up the success of the entire
-                                            process. The planning stage includes procuring thr correct
-                                            parts and services for succes. The planning step must
+                                            process. The planning stage includes procuring the correct
+                                            parts and services for success. The planning step must
                                             ensure that everyone and everything involved with the
                                             process are reliable and will provide customer
                                             satisfaction. Important parts must be ready at the right
-                                            times for the manufacturing.
+                                            times for manufacturing to occur.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -204,7 +218,7 @@ export default class General extends Component {
                                             <ul>
                                                 <li>
                                                     {" "}
-                                                    <a
+                                                    <a  class="underline"
                                                         href="https://www.nist.gov/mep/successstories/2020/iatf-16949-and-core-tools-training-essential-tier-1-automotive-supplier"
                                                         target="_blank"
                                                     >
@@ -215,7 +229,7 @@ export default class General extends Component {
                                                 </li>
                                                 <li>
                                                     {" "}
-                                                    <a
+                                                    <a  class="underline"
                                                         href="https://www.amatechinc.com/resources/blog/returnable-packaging/tier-1-2-3-automotive-industry-supply-chain-explained"
                                                         target="_blank"
                                                     >
@@ -226,7 +240,7 @@ export default class General extends Component {
                                                 </li>
                                                 <li>
                                                     {" "}
-                                                    <a
+                                                    <a  class="underline"
                                                         href="https://www.amatechinc.com/resources/blog/returnable-packaging/tier-1-2-3-automotive-industry-supply-chain-explained"
                                                         target="_blank"
                                                     >
@@ -241,7 +255,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -263,28 +277,18 @@ export default class General extends Component {
                                             to coordinate goods recieval, storage, picking up, and
                                             shipment of all the vehicles. Inventory management also
                                             moves raw materials, semi finished matierials, and
-                                            finished projects. As well as these fucntions, it also has
+                                            finished projects. As well as these functions, it also has
                                             to comply with warehouse standards nationally and
-                                            internationally. •Main functions are goods receival,
-                                            storage, picking, shipment •Distribution, production,
-                                            contract warehouses •Movement of raw, semi-finished, and
-                                            finished productsThe inventory management phase of the
-                                            automotive supply chain is important because it has
-                                            multiple roles. It has to coordinate goods recieval,
-                                            storage, picking up, and shipment of all the vehicles.
-                                            Inventory management also moves raw materials, semi
-                                            finished matierials, and finished projects. As well as
-                                            these fucntions, it also has to comply with warehouse
-                                            standards nationally and internationally. •Main functions
-                                            are goods receival, storage, picking, shipment
-                                            •Distribution, production, contract warehouses •Movement
-                                            of raw, semi-finished, and finished products
+                                            internationally. The main functions are goods receival,
+                                            storage, picking, shipment; distribution, production,
+                                            contract warehouses; and movement of raw, semi-finished, and
+                                            finished products.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -301,19 +305,25 @@ export default class General extends Component {
                                             Manufacturing
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
-                                            The manufacturing phase comprises the design, physical
+                                            The {" "}
+                                             <a  class="underline"
+                                                        href="https://jfrog.com/blog/log4shell-0-day-vulnerability-all-you-need-to-know/"
+                                                        target="_blank"
+                                                    >
+                                                        manufacturing phase for the automotive industry 
+                                                    </a>
+                                            {" "} comprises the design, physical
                                             manufacturing, and software development of the vehicle's
                                             internal technology. The cyber risks at this phase range
                                             from intellectual property theft, social engineering,
                                             employee errors or abuse of systems, and vulnerabilities
-                                            in mobile networks.
-                                            https://jfrog.com/blog/log4shell-0-day-vulnerability-all-you-need-to-know/
+                                            in mobile networks. 
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -349,7 +359,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -393,8 +403,8 @@ export default class General extends Component {
                             </h2>
 
                             <div class="relative mt-20 lg:mt-24">
-                                <div class="container flex flex-col lg:flex-row gap-x-24">
-                                    <h3 class="text-2xl text-left font-semibold font-poppins text-primary-dark-gray ">Overview</h3>
+                                <div class="flex flex-1 flex-col items-start">
+                                    <h3 class="text-2xl text-left font-semibold text-primary-dark-gray ">Overview</h3>
                                     <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                         The{" "}
                                         <a
@@ -419,7 +429,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -462,7 +472,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -498,7 +508,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -547,7 +557,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -583,7 +593,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-52">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
@@ -619,7 +629,7 @@ export default class General extends Component {
                                 </div>
                             </div>
 
-                            <div class="relative mt-20 lg:mt-24">
+                            <div class="relative mt-20 lg:mt-4">
                                 <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
                                     <div class="flex flex-1 justify-center mb-10 lg:mb-0 card-feature-border shadow-lg">
                                         <img
