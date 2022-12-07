@@ -12,7 +12,7 @@ export default class logout extends Component {
     return (
       <div>
         <div className='logoff_container'>
-          <p data-testid="signout-test">Successfully Logged Out !</p>
+          <p data-testid="signout-test">You have successfully logged out.</p>
             <Link className='planner-link' to={{
               pathname: '/Login',
             }}>Login
