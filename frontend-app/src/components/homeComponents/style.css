@@ -7,10 +7,10 @@
     width: 150px;
     /* margin: 3px; */
     height: fit-content;
-    border-bottom: 2px solid lightgrey;
+    
     padding: 20px 0px;
-    border-radius: 15px;
-    border-top: 2px solid lightgrey;
+   
+    border: none;
     background: white;
 }
 .inner-content {
