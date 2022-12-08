@@ -1,6 +1,6 @@
 /*
 @Desc : javascript login file for login functionality.
-@Author : Megha Rajpoot
+@Author : Megha Rajpoot, Rachel Wang
 */
 
 import React, { Component, Fragment} from 'react'
@@ -140,7 +140,7 @@ export default class Login extends Component {
                         </div>
                         <div className='register_link'>
                             <span id="no_account">
-                                <a className='l_btn' href="/Register"> Don't have an account? Register </a>
+                            Don't have an account? <a className='l_btn' href="/Register">Register </a>
                         </span>
                         </div>
                     </div>

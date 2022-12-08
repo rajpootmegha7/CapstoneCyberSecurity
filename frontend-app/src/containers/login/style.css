@@ -82,7 +82,7 @@ h1 {
 .li_image_container {
   height: 6em;
   
-  margin: 2.5% 3% 0 2.5%;
+  margin: 2.5% 3% 0 3%;
   background: greysmoke;
   align-items: left;
  
@@ -118,4 +118,20 @@ img#login-image {
   width: 90%;
   margin-left: 8%;
   margin-top: 5%;
+}
+a.l_btn {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #3D9A54;
+}
+a.l_btn:hover {
+  text-decoration: underline;
+  
+  color: black;
+  font-size: 16px;
+}
+
+
+span {
+  font-size: 16px;
 }
