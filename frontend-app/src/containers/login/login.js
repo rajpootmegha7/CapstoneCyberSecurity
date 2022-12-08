@@ -6,7 +6,7 @@
 import React, { Component, Fragment} from 'react'
 import './style.css'
 import logo_reference from '../../images/deloitte.png'
-import login_background from '../../images/login-2.png'
+import login_background from '../../images/analytics.svg'
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
@@ -89,8 +89,8 @@ export default class Login extends Component {
             <Fragment>
             <Toast ref={(el) => this.toast = el} />
             <div className='li_image_container'>
-                    <img id="logo" src={logo_reference} alt="logo" width="100px" height="98px" />
-                </div>
+                    <img id="logo" src={logo_reference} alt="logo" />
+             </div>
             <div className="container">
                 
                 <div className='main_card'>
@@ -136,7 +136,7 @@ export default class Login extends Component {
                         </div>
                         
                         <div className='button_submit'>
-                            <Button  label=" Submit" icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
+                            <Button label=" Submit" icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
                         </div>
                         <div className='register_link'>
                             <span id="no_account">
@@ -147,7 +147,7 @@ export default class Login extends Component {
                    
                     </div>
                     <div className='login_back' >
-                        <img src={login_background} alt="CS Logo" width="auto" height="580px" />
+                        <img id='login-image' src={login_background} alt="" />
 
                     </div>
                
