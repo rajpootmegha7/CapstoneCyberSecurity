@@ -19,6 +19,8 @@ export default class General extends Component {
                 <Header/>
                 <main role="main" class="">
                     <div class="max-w-5xl mb-4 mx-auto h-min">
+                    <h1 class="text-3xl font-semibold  mt-12">General Info</h1>
+                    <p class="mb-10">This page provides an overview of the processes of each supply chain step and general reguations by industry.</p>
                         <div class="flex flex-col lg:flex-row h-min gap-x-10 quick-jump" >
                                 <p class="text-gray-700">QUICK JUMP:</p>
                                 <a href="#automotive_general_info" class="quick-jump text-gray-700 hover:text-blue-800 hover:underline">Automotive Manufacturing</a>
