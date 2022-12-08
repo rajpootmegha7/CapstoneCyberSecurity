@@ -32,7 +32,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className='header_cont'>
-                <div data-testid="header-test"><img src={logo_reference} alt="logo" width="100px" height="98px" /></div>
+                <div data-testid="header-test"><img src={logo_reference} alt="logo" width="82px" height="80px" /></div>
                 <div className='menu_cont'>
                     <Link id='0_btn' to='/home'>Home</Link>
                     <Link id='1_btn' to='/general_info' >General Info</Link>

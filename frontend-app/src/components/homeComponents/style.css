@@ -64,7 +64,8 @@
 
 #card-label:hover{
     
-    text-decoration: underline;
+    background: #6366F1;
+    color: #FFFFFF;
 }
 
 .badge-step{
@@ -83,6 +84,11 @@
     justify-content: center;
     margin-left: 40%;
     margin-right: 40%;
+
     display: block;
 
+}
+li {
+    list-style-type: disc;
+    margin-bottom: 1%;
 }

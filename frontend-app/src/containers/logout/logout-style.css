@@ -9,7 +9,10 @@
     font-size: 1.5em;
   }
   .logoff_container{
-    height: 30em;
+    height: auto;
+    width: full;
+    align-items:center;
+    margin-top: 5%;
   }
     .planner-link {
         color: darkgreen;
@@ -18,4 +21,14 @@
 
  div {
   font-family: sans-serif;
+ }
+ img#logout {
+  width: 30%;
+  display: block;
+  margin-left: 35%;
+  margin-right: 35%;
+ }
+
+ a:hover {
+  color: black;
  }

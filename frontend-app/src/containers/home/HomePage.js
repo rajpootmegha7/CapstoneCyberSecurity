@@ -38,13 +38,14 @@ export default function HomePage() {
 
         <div className='supply-select'>
           <Parallax bgImage={white} strength={500}> 
-            
+          <div className='TypeCard'>
+            <p className='entry-label' >Select Supply Chain:</p>
+            </div>
           </Parallax>
         </div>
 
         <div className='HomeContainer'>
           <div className='TypeCard'>
-                <p class="mb-2 px-4 font-inter text-lg">Select Supply Chain:</p>
                 <Button id="type-btn" className="p-button-rounded p-button-outlined go-btn p-button-lg" 
                         aria-label="Submit"
                         label='Automotive' onClick={setAutomotive}/>
