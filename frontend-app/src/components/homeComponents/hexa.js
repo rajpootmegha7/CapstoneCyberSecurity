@@ -43,7 +43,7 @@ export default class Hexa extends Component {
             case 'delivery':
                 return(<img className='hexa-img' src={delivery} alt='delivery'/>)
             case 'manufacturing':
-                return(<img className='hexa-img' src={delivery} alt='manufacturing'/>)
+                return(<img className='hexa-img' src={manufacturing} alt='manufacturing'/>)
             default:
                 return(<img className='hexa-img' src={customer} alt='customer'/>)
         }
