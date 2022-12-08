@@ -64,7 +64,8 @@
 
 #card-label:hover{
     
-    text-decoration: underline;
+    background: #6366F1;
+    color: #FFFFFF;
 }
 
 .badge-step{

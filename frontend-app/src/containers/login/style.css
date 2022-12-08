@@ -17,8 +17,9 @@ h1 {
   font-family: Sans-Serif;
 }
 #login_container {
-  width: 539px;
-  padding: 20px;
+  width: auto;
+  padding: 40px;
+  margin-bottom: 20px;
   text-align: left;
 
   /* left: 50px; */
@@ -39,6 +40,7 @@ h1 {
     font-weight: 500;
     font-size: 30px;
     color: black;
+    margin-bottom: 4%;
   }
 
 
@@ -48,13 +50,13 @@ h1 {
     font-weight: normal;
     font-size: xxx-large;
     color: #000000;
-    margin: 2px;
+    margin: 2 2 2 0;
   }
 
 #label_text{
   font-family: Sans-Serif;
   color: darkslategrey;
-  /* margin: 1px; */
+ 
 }
 
 .button_submit {
@@ -65,7 +67,9 @@ h1 {
 .button_submit > button {
   background: #86BC24;
   border-color: #86BC24;
+  margin-top: 2%;
 }
+
 
 .li_image_container {
   height: 6em;
@@ -75,20 +79,26 @@ h1 {
 }
 
 .li_image_container > img {
-  float: left;
   width: 5%;
 }
 
+
 .main_card {
-  display: flex;
-  width: auto;
+  float: left;
   height: max-content;
   justify-content: space-between;
+  width: 50%;
 }
 
 .login_back {
-  position: relative;
+  display: block;
+  float: right;
   opacity: 0.8;
-  height: 42em;
-  width: 42em;
+  width: 50%;
+  padding-left: 5%;
+  padding-bottom: -20%;
+  
+}
+div.login_item{
+  margin-top: 5%;
 }

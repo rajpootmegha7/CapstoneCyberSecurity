@@ -88,26 +88,31 @@ export default class Login extends Component {
         return (
             <Fragment>
             <Toast ref={(el) => this.toast = el} />
-            <div className="container">
-                <div className='li_image_container'>
+            <div className='li_image_container'>
                     <img id="logo" src={logo_reference} alt="logo" width="100px" height="98px" />
                 </div>
+            <div className="container">
+                
                 <div className='main_card'>
                     <div id="login_container">
                         <div className="container_welcome">
                             <p id="welcome"> Cyber Attacks Map</p>
                         </div>
-                        <h1 data-testid="sign-in-test" id="sign_in">Sign in </h1>
-                        <span className="p_float_label">
-                        <p id='label_text'>Email Address</p>   
-                        <InputText
-                            id="form_input"
-                            placeholder='Email Address'
-                            value={this.state.email}
-                            onChange={(e) => this.setState({ email: e.target.value })}
-                            required
-                        />
-                        </span>
+                        <h2 data-testid="sign-in-test" id="sign_in">Sign in </h2>
+                        
+                          <div class="login_item" >
+                            <span className="p_float_label">
+                            <p id='label_text'>Email Address</p>   
+                            <InputText
+                                id="form_input"
+                                placeholder='Email Address'
+                                value={this.state.email}
+                                onChange={(e) => this.setState({ email: e.target.value })}
+                                required
+                            />
+                            </span>
+                        </div>
+                        <div class="login_item" >
                         <span className="p_float_label">
                         <p id='label_text'>Username</p>   
                         <InputText
@@ -118,6 +123,9 @@ export default class Login extends Component {
                             required
                         />
                         </span>
+                        </div>
+
+                        <div class="login_item" >
                         <p id='label_text'>Password</p>
                         <Password 
                             value={this.state.password}  
@@ -125,6 +133,7 @@ export default class Login extends Component {
                             onChange={(e) => this.setState({ password: e.target.value })} 
                             toggleMask 
                             required/>
+                        </div>
                         
                         <div className='button_submit'>
                             <Button  label=" Submit" icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
@@ -134,14 +143,14 @@ export default class Login extends Component {
                                 <a className='l_btn' href="/Register"> Don't have an account? Register </a>
                         </span>
                         </div>
-                    
+                    </div>
+                   
                     </div>
                     <div className='login_back' >
                         <img src={login_background} alt="CS Logo" width="auto" height="580px" />
 
                     </div>
-                </div>
-                
+               
              
             </div>
    

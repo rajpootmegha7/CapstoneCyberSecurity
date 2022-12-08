@@ -163,9 +163,7 @@ export default class register extends Component {
                         </div>
                     
                     </div>
-                    <div className='login_back' >
-                        <img src={login_background} alt="CS Logo" width="auto" height="580px" />
-                    </div>
+                   
                 </div>
 
             </div>
