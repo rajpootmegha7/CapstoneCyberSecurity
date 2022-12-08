@@ -2,13 +2,17 @@
 /*
 Style.css for register functionality
 */
-
+.container {
+  height: 600px;
+  width: auto;
+  font-family: sans-serif;
+}
 #register_container {
-    width: 539px;
-    padding: 20px;
-    text-align: left;
-    left: 50px;
-    }
+  width: auto;
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  }
   
   #form_input {
       width: 100%;
@@ -28,7 +32,7 @@ Style.css for register functionality
     }
   
     #welcome {
-      font-family: Poppins;
+      font-family: sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: xxx-large;
@@ -36,7 +40,7 @@ Style.css for register functionality
     }
    
   #label_text{
-    font-family: 'Lobster';
+    font-family: sans-serif;
     color: darkslategrey;
     /* margin: 1px; */
   }
@@ -46,5 +50,62 @@ Style.css for register functionality
       padding-left: 0px;
   }
   
+  .register_back {
+    display: block;
+    float: right;
+    opacity: 0.8;
+    width: 50%;
+    padding-left: 5%;
+    padding-bottom: -20%;
+    
+  }
+  div.login_item{
+    margin-top: 5%;
+  }
   
+  img#login-image {
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 5%;
+  }
   
+  .li_image_container {
+    height: 6em;
+    
+    margin: 2.5% 3% 0 3%;
+    background: greysmoke;
+    align-items: left;
+   
+  }
+  
+  .li_image_container > img {
+    width: 5%;
+    float: left;
+  }
+  div.register_item{
+    margin-top: 5%;
+  }
+  
+  img#register-image {
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 5%;
+  }
+  .main_card {
+    float: left;
+    height: max-content;
+    justify-content: space-between;
+    width: 50%;
+  }
+  a.l_btn {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  a.l_btn:hover {
+    text-decoration: underline;
+    font-size: 14px;
+    color: black;
+  }
+  span {
+    font-size: 14px;
+  }

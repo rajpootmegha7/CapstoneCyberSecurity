@@ -1,6 +1,6 @@
 /*
 @Desc : javascript file for register functionality.
-@Author : Megha Rajpoot
+@Author : Megha Rajpoot, Rachel Wang
 */
 
 import React, { Component, Fragment} from 'react'
@@ -12,6 +12,7 @@ import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
+import register_background from '../../images/analytics.svg'
 
 export default class register extends Component {
     
@@ -118,7 +119,8 @@ export default class register extends Component {
                         <div className="container_welcome">
                             <p id="welcome"> Cyber Attacks Map</p>
                         </div>
-                        <h1 data-testid="sign-in-test" id="sign_in">Sign Up </h1>
+                        <h1 data-testid="sign-in-test" id="sign_in">Register </h1>
+                         <div class="register_item" >
                         <span className="p_float_label">
                         <p id='label_text'>Email Address</p>   
                         <InputText
@@ -129,6 +131,8 @@ export default class register extends Component {
                             required
                         />
                         </span>
+                        </div>
+                        <div class="register_item" >
                         <span className="p_float_label">
                         <p id='label_text'>Username</p>   
                         <InputText
@@ -139,6 +143,8 @@ export default class register extends Component {
                             required
                         />
                         </span>
+                        </div>
+                        <div class="register_item" >
                         <p id='label_text'>Password</p>
                         <Password 
                             value={this.state.password}  
@@ -146,25 +152,33 @@ export default class register extends Component {
                             onChange={(e) => this.setState({ password: e.target.value })} 
                             toggleMask 
                             required/>
+                        </div>
+
+                        <div class="register_item" >
                         <p id='label_text'> Confirm Password</p>
                         <Password value={this.state.password2}
                             placeholder='Confirm your password'
                             onChange={(e) => this.setState({ password2: e.target.value })} toggleMask
                             required
                         />
+                        </div>
                         
                         <div className='button_submit'>
                             <Button  label=" Submit " icon="pi pi-check" iconPos="right" onClick={this.clickSubmit} />
                         </div>
                         <div className='register_link'>
                             <span id="no_account">
-                                <a className='l_btn' href="/Login"> Already have an account? Sign in </a>
+                            Already have an account? <a className='l_btn' href="/Login">Sign in </a>
                         </span>
                         </div>
                     
                     </div>
                    
                 </div>
+                <div className='register_back' >
+                        <img id='register-image' src={register_background} alt="" />
+
+                    </div>
 
             </div>
    
