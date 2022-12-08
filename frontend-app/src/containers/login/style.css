@@ -2,26 +2,26 @@
 Style.css for login functionality
 */
 body {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 p {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
-h1 {
+h1, h2 {
   
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 .container {
   height: 600px;
   width: auto;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 #login_container {
   width: auto;
   padding: 40px;
   margin-bottom: 20px;
   text-align: left;
-
+  font-family: 'Work Sans', sans-serif;
   /* left: 50px; */
   }
 
@@ -45,7 +45,7 @@ h1 {
 
 
   #welcome {
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: xxx-large;
@@ -54,7 +54,7 @@ h1 {
   }
 
 #label_text{
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: darkslategrey;
  
 }
@@ -116,8 +116,8 @@ div.login_item{
 
 img#login-image {
   width: 90%;
-  margin-left: 8%;
-  margin-top: 5%;
+    margin-left: 18%;
+    margin-top: 8%;
 }
 a.l_btn {
   text-decoration: underline;
@@ -133,5 +133,6 @@ a.l_btn:hover {
 
 
 span {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }

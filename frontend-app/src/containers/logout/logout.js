@@ -16,7 +16,7 @@ export default class logout extends Component {
         <img id="logout" src={illustration} alt=""/>
           <p data-testid="signout-test">You have successfully logged out.</p>
           
-            <Link className='planner-link' to={{
+            <Link className='planner-link-2' to={{
               pathname: '/Login',
             }}>Login
             </Link>

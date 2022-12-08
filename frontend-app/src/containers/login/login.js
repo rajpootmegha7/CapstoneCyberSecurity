@@ -4,7 +4,7 @@
 */
 
 import React, { Component, Fragment} from 'react'
-import './style.css'
+
 import logo_reference from '../../images/deloitte.png'
 import login_background from '../../images/analytics.svg'
 import { InputText } from 'primereact/inputtext';
@@ -12,7 +12,7 @@ import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 
-
+import './style.css'
 export default class Login extends Component {
     
     constructor(props) {

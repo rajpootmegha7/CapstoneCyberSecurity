@@ -10,6 +10,7 @@ import delivery from "../../images/delivery.png";
 import customer_support from "../../images/customer_support.png";
 import Header from "../header/Header";
 import '../../index.css';
+import './style.css';
 
 export default class General extends Component {
     render() {
@@ -18,20 +19,20 @@ export default class General extends Component {
                 <Header/>
                 <main role="main" class="">
                     <div class="max-w-5xl mb-4 mx-auto h-min">
-                        <div class="flex flex-col lg:flex-row h-min gap-x-10" >
-                                <p>QUICK JUMP:</p>
-                                <a href="#automotive_general_info">Automotive Manufacturing</a>
-                                <a href="#technology_general_info">Technology</a>
+                        <div class="flex flex-col lg:flex-row h-min gap-x-10 quick-jump" >
+                                <p class="text-gray-700">QUICK JUMP:</p>
+                                <a href="#automotive_general_info" class="quick-jump text-gray-700 hover:text-blue-800 hover:underline">Automotive Manufacturing</a>
+                                <a href="#technology_general_info" class="quick-jump text-gray-700 hover:text-blue-800 hover:underline">Technology</a>
                             </div>
                     </div>
                    
                     <section id="automotive_general_info" class="pb-20 mt-0 font-dm-sans">
                         <div class="max-w-5xl px-20 mx-auto sm:px-30 md:px-50 lg:px-0">
-                            <h2 class="text-left mb-6 text-primary-dark-gray text-3xl font-semibold  pt-50">
+                            <h2 class="text-left mt-12 text-primary-dark-gray text-3xl font-semibold  pt-50">
                                 Automotive Manufacturing
                             </h2>
 
-                            <div class="relative mt-20 lg:mt-24  h-min">
+                            <div class="relative mt-10 lg:mt-24  h-min">
                                 <div class="flex flex-col lg:flex-row gap-x-24 gap-y-0 h-min mb-10">
                                     <div class="flex flex-1 flex-col items-start py-0 mb-0  h-min ">
                                         <h3 class="text-2xl text-left font-semibold text-primary-dark-gray">

@@ -1,10 +1,12 @@
 .header_cont{
     height: 6em;
     width: 100%;
+    padding-left: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .menu_cont {
     display: inline-flex;
@@ -12,4 +14,9 @@
     width: 30%;
     font-weight: 300;
     align-items: inherit;
+
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    width: 20%;
 }

@@ -1,35 +1,47 @@
 
+  .logoff_container{
+    height: auto;
+    width: full;
+    align-items: center;
+    margin-top: 5%;
+    display: block;
+    width: auto;
+    margin-left: 0%;
+    
+  }
+
 .logoff_container > .btn-container {
     width: 10%;
-    margin-left: 45%;
+    
   }
+  
   .logoff_container > p {
     color: darkslategrey;
     text-align: center;
     font-size: 1.5em;
-  }
-  .logoff_container{
-    height: auto;
-    width: full;
-    align-items:center;
-    margin-top: 5%;
-  }
-    .planner-link {
-        color: darkgreen;
-        text-decoration-line: underline;
+   
+}
+
+.planner-link-2 {
+  color: darkgreen;
+   text-decoration-line: underline;
+   text-align: center;
+    margin-left: 48%;
+      
  }
 
  div {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
  }
  img#logout {
   width: 30%;
   display: block;
   margin-left: 35%;
-  margin-right: 35%;
+ 
  }
 
  a:hover {
   color: black;
+  
  }
  

@@ -1,0 +1,15 @@
+.quick-jump {
+    font-family:'Work Sans', sans-serif;
+}
+
+h2, h3 {
+    font-family:'Poppins', sans-serif;
+}
+
+p, li {
+    font-family:'Work Sans', sans-serif;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
