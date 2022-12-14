@@ -64,10 +64,9 @@
     
 }
 
-.card-label:hover{
-    
-    background: #6366F1;
-    color: #FFFFFF;
+.card-label:hover, .card-label:active{
+    background: #6366F1 !important;;
+    color: #FFFFFF !important;
 }
 
 .badge-step{

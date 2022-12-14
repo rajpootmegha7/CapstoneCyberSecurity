@@ -27,8 +27,8 @@
                 "Inserting backdoor-  or cyberattack through means of malware, viruses, or technology to get unauthorized access to the network or system- to get botnet access or a group of interconnected networks to perform cyber attacks",
                 "After attacking the supply chain through means such as inserting malicious code Link-https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/",
                 "Hackers can insert malware for cryptomining Link-https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/",
-                "•Inserting backdoors for botnet access can lead to denial of service, or DDoS, attacks, stolen data, sent spam Link- https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/",
-                "•Dependencies can change at a more rapid pace which can pose unknown security risks at any time if developers do not stay up-to-date Link- https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/"
+                "Inserting backdoors for botnet access can lead to denial of service, or DDoS, attacks, stolen data, sent spam Link- https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/",
+                "Dependencies can change at a more rapid pace which can pose unknown security risks at any time if developers do not stay up-to-date Link- https://github.blog/2020-09-02-secure-your-software-supply-chain-and-protect-against-supply-chain-threats-github-blog/"
             ],
             "Mitigations": [
                 "Microsoft Defender Antivirus Link-https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide",
