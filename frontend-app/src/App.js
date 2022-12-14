@@ -6,7 +6,6 @@ import Home from './containers/home/HomePage'
 import Logout from './containers/logout/logout'
 import ProtectedRoute from './components/ProtectedRoute';
 import General from './containers/general/general';
-import './App.css'
 
 function App() {
   return (

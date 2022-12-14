@@ -186,7 +186,7 @@ export default class Hexa extends Component {
             <div className='bottom-card' style={pcolor}></div>
         </div>
         <Badge className='badge-step' value={step} size="large"></Badge>
-        <Button id="card-label" className='p-button-outlined p-button-secondary' onClick={()=>this.getContentData(pname)} >{pname}</Button>
+        <Button className='p-button-outlined p-button-secondary card-label' onClick={()=>this.getContentData(pname)} >{pname}</Button>
         
         <Dialog header={pname} visible={this.state.displayResponsive} onHide={() => this.onHide('displayResponsive')} breakpoints={{'960px': '75vw'}} style={{width: '50vw'}} footer={this.renderFooter('displayResponsive')}>
             <div className='p-content-card'>

@@ -25,27 +25,28 @@ Style.css for register functionality
   }
   
     #sign_in {
-      font-family: 'Lobster';
+      font-family: 'Work Sans', sans-serif;
       font-weight: 500;
       font-size: 30px;
       color: black;
     }
   
     #welcome {
-      font-family: sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 500;
       font-size: xxx-large;
       color: #000000;
     }
    
   #label_text{
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: darkslategrey;
     /* margin: 1px; */
   }
   
   .button_submit {
+    font-family: 'Poppins', sans-serif;
       padding: 15px;
       padding-left: 0px;
   }
@@ -88,8 +89,8 @@ Style.css for register functionality
   
   img#register-image {
     width: 90%;
-    margin-left: 4%;
-    margin-top: 5%;
+    margin-left: 18%;
+    margin-top: 8%;
   }
   .main_card {
     float: left;
@@ -99,13 +100,17 @@ Style.css for register functionality
   }
   a.l_btn {
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
   }
   a.l_btn:hover {
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
   }
   span {
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  input {
+    width: 100% !important;
   }

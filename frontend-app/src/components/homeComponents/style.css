@@ -7,7 +7,7 @@
     width: 150px;
     /* margin: 3px; */
     height: fit-content;
-    
+    font-family: 'Work Sans', sans-serif;
     padding: 20px 0px;
     text-align: center;
     align-items: center;
@@ -50,22 +50,23 @@
     margin-top: 20px;
 }
 
-#card-label {
-    margin-top: 10%;
+.card-label {
+    margin-top: 10% !important;
     justify-content: center;
-    font-size: small;
-    border-color: #6366F1;
+    font-size: medium;
+    font-weight: 500;
+    border-color: #6366F1 !important;
     background: white;
-    color: #6366F1;
+    color: #6366F1 !important;
     text-align: center;
     align-items: center;
+    font-family: 'Work Sans', sans-serif;
     
 }
 
-#card-label:hover{
-    
-    background: #6366F1;
-    color: #FFFFFF;
+.card-label:hover, .card-label:active{
+    background: #6366F1 !important;;
+    color: #FFFFFF !important;
 }
 
 .badge-step{
@@ -77,6 +78,7 @@
     /* display: inline-flex; */
     font-size: smaller;
     color: #6366F1;
+    font-family: 'Work Sans', sans-serif;
 }
 .p-badge {
     text-align: center;
@@ -84,11 +86,12 @@
     justify-content: center;
     margin-left: 40%;
     margin-right: 40%;
-
+    font-family: 'Work Sans', sans-serif;
     display: block;
 
 }
 li {
     list-style-type: disc;
     margin-bottom: 1%;
+    font-family: 'Work Sans', sans-serif;
 }

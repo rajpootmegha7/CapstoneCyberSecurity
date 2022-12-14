@@ -12,7 +12,7 @@ import lines from "../../images/line.png"
 export default function HomePage() {
     const [token, setToken] = useState(null);
     const [supplyDataType, setSupplyDataType] = useState(null);
-
+   
     useEffect(() => {
         // get the authorization token from ls
         setToken(localStorage.getItem('token'))
@@ -21,37 +21,44 @@ export default function HomePage() {
     const setAutomotive = (e) =>{
         e.preventDefault();
         setSupplyDataType("automotive")
+       
+        
     }
+
     const setTechnology = (e) =>{
         e.preventDefault();
         setSupplyDataType("technology")
+       
     }
 
   return (
     <Fragment>
         <Header />
-        <div className='home-entry'> 
+
+        <div className='home-entry' role='banner'> 
           <Parallax id="plx-1" bgImage={global} strength={500}>
-              <p className='entry-label' >Cyber Security Supply Chain Interactive Map</p>
+              <h1 className='entry-label' >Cyber Security Supply Chain Interactive Map</h1>
           </Parallax>
         </div>
 
-        <div className='supply-select'>
+        <div className='supply-select' role='complementary'>
           <Parallax bgImage={white} strength={500}> 
           <div className='TypeCard'>
-            <p className='entry-label' >Select Supply Chain:</p>
+            <p className='entry-label-2' >Select an industry:</p>
             </div>
           </Parallax>
         </div>
-
+        <main>
         <div className='HomeContainer'>
           <div className='TypeCard'>
-                <Button id="type-btn" className="p-button-rounded p-button-outlined go-btn p-button-lg" 
-                        aria-label="Submit"
+            <div class="button-align">
+                <Button className="p-button-rounded p-button-outlined go-btn p-button-lg industry-button"
+                        aria-label="Select Automotive"
                         label='Automotive' onClick={setAutomotive}/>
-                <Button id="type-btn" className="p-button-rounded p-button-outlined go-btn p-button-lg" 
-                        aria-label="Submit"
+                <Button className="p-button-rounded p-button-outlined go-btn p-button-lg industry-button"
+                        aria-label="Select Technology"
                         label='Technology' onClick={setTechnology}/>
+                </div>
             </div>
 
             <div className='MainContentCard'>
@@ -63,9 +70,10 @@ export default function HomePage() {
                 <Hexa pname='Delivery' pimage = 'delivery' ptype = {supplyDataType} step = "5" pcolor = {"#E8E4FF"}/>
                 <Hexa pname='Customer Support' pimage = 'customer' ptype = {supplyDataType} step = "6" pcolor = {"#3C317D"}/>
             </div> 
-
+         
             
         </div>
+        </main>
     </Fragment>
     
   )

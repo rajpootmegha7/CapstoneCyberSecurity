@@ -4,7 +4,7 @@
 */
 
 import React, { Component, Fragment} from 'react'
-import './style.css'
+
 import logo_reference from '../../images/deloitte.png'
 import login_background from '../../images/analytics.svg'
 import { InputText } from 'primereact/inputtext';
@@ -12,7 +12,7 @@ import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 
-
+import './style.css'
 export default class Login extends Component {
     
     constructor(props) {
@@ -88,23 +88,23 @@ export default class Login extends Component {
         return (
             <Fragment>
             <Toast ref={(el) => this.toast = el} />
-            <div className='li_image_container'>
-                    <img id="logo" src={logo_reference} alt="logo" />
-             </div>
+            <div className='li_image_container' role='presentation'>
+                    <img id="logo" src={logo_reference} role='presentation' alt="" />
+            </div>
             <div className="container">
-                
+                <main>
                 <div className='main_card'>
                     <div id="login_container">
                         <div className="container_welcome">
                             <p id="welcome"> Cyber Attacks Map</p>
                         </div>
-                        <h2 data-testid="sign-in-test" id="sign_in">Sign in </h2>
+                        <h1 data-testid="sign-in-test" id="sign_in">Sign in </h1>
                         
                           <div class="login_item" >
                             <span className="p_float_label">
-                            <p id='label_text'>Email Address</p>   
+                            <p class='label_text'>Email Address</p>   
                             <InputText
-                                id="form_input"
+                                class="form_input"
                                 placeholder='Email Address'
                                 value={this.state.email}
                                 onChange={(e) => this.setState({ email: e.target.value })}
@@ -114,9 +114,9 @@ export default class Login extends Component {
                         </div>
                         <div class="login_item" >
                         <span className="p_float_label">
-                        <p id='label_text'>Username</p>   
+                        <p class='label_text'>Username</p>   
                         <InputText
-                            id="form_input"
+                            class="form_input"
                             placeholder='Username'
                             value={this.state.username}
                             onChange={(e) => this.setState({ username: e.target.value })}
@@ -126,7 +126,7 @@ export default class Login extends Component {
                         </div>
 
                         <div class="login_item" >
-                        <p id='label_text'>Password</p>
+                        <p class='label_text'>Password</p>
                         <Password 
                             value={this.state.password}  
                             placeholder='Password'
@@ -146,12 +146,12 @@ export default class Login extends Component {
                     </div>
                    
                     </div>
-                    <div className='login_back' >
+                    <div className='login_back' role='presentation' >
                         <img id='login-image' src={login_background} alt="" />
 
                     </div>
                
-             
+                    </main>
             </div>
    
         </Fragment>

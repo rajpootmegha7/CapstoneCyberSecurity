@@ -7,6 +7,7 @@ Parallax {
 .HomeContainer {
     width: 100%;
     height: 600px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .MainContentCard {
@@ -17,21 +18,23 @@ Parallax {
     justify-content: space-evenly;
     /* background-image: url('../../images/Backimg.drawio.png');
     background-repeat: no-repeat; */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .line-img {
     position: absolute;
     margin-left: 2px;
     margin-top: 78px;
+    width: 80%;
     z-index: -100;
 }
 .go-btn { 
     margin-left: 12px;
 }
 
-#type-btn:focus {
-    background: #6366F1;
-    color: white;
+.industry-button:focus, .active-industry-button {
+    background: #6366F1 !important;
+    color: white !important;
 }
 
 .home-entry {
@@ -60,12 +63,55 @@ Parallax {
 
 .entry-label {
     font-size: 60px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 60px;
     margin-top: 3em;
     color: white;
+    -webkit-text-stroke: 1.25px grey;
     font-weight: 700;
     letter-spacing: -1px;
-    text-shadow: 5px 1px 3px rgb(0 0 0 / 60%);
+   
     text-align: center;
+}
+
+.entry-label-2 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 60px;
+    margin-top: 3em;
+    color: black;
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: block;
+    text-align: center;
+}
+
+.button-align {
+    margin-top: -15%;
+    display: block;
+    text-align: center;
+ 
+    font-family: 'Work Sans', sans-serif;
+    
+}
+span {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.p-component {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.data_container {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    font-family:'Poppins', sans-serif;
+}
+.p-tabview-nav {
+    font-family:'Poppins', sans-serif;
+}
+.p-dialog-title {
+    font-family:'Poppins', sans-serif;
 }
