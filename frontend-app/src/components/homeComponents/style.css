@@ -50,20 +50,21 @@
     margin-top: 20px;
 }
 
-#card-label {
-    margin-top: 10%;
+.card-label {
+    margin-top: 10% !important;
     justify-content: center;
-    font-size: small;
-    border-color: #6366F1;
+    font-size: medium;
+    font-weight: 500;
+    border-color: #6366F1 !important;
     background: white;
-    color: #6366F1;
+    color: #6366F1 !important;
     text-align: center;
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     
 }
 
-#card-label:hover{
+.card-label:hover{
     
     background: #6366F1;
     color: #FFFFFF;

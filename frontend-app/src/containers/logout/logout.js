@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-import './logout-style.css'
+
 import illustration from '../../images/analytics.svg'
+import './style.css'
 
 // class component for logout functionality.
 export default class logout extends Component {
@@ -11,10 +12,13 @@ export default class logout extends Component {
   }
   render() {
     return (
+
+      <main>
       <div>
         <div className='logoff_container'>
-        <img id="logout" src={illustration} alt=""/>
-          <p data-testid="signout-test">You have successfully logged out.</p>
+        <img id="logout" src={illustration} role="presentation" alt=""/>
+
+          <h1 data-testid="signout-test">You have successfully logged out.</h1>
           
             <Link className='planner-link-2' to={{
               pathname: '/Login',
@@ -24,6 +28,7 @@ export default class logout extends Component {
         </div>
 
       </div>
+      </main>
 
     )
   }

@@ -7,6 +7,8 @@
     display: block;
     width: auto;
     margin-left: 0%;
+    text-align: center;
+  font-family: 'Work Sans', sans-serif !important;
     
   }
 
@@ -26,13 +28,11 @@
   color: darkgreen;
    text-decoration-line: underline;
    text-align: center;
-    margin-left: 48%;
+  
       
  }
 
- div {
-  font-family: 'Work Sans', sans-serif;
- }
+
  img#logout {
   width: 30%;
   display: block;
@@ -45,3 +45,8 @@
   
  }
  
+ body {
+    font-family: 'Work Sans', sans-serif !important;
+  
+ }
+

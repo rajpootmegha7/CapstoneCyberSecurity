@@ -32,9 +32,9 @@ Parallax {
     margin-left: 12px;
 }
 
-#type-btn:focus {
-    background: #6366F1;
-    color: white;
+.industry-button:focus, .active-industry-button {
+    background: #6366F1 !important;
+    color: white !important;
 }
 
 .home-entry {

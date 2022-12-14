@@ -17,14 +17,15 @@ export default class General extends Component {
         return (
             <Fragment>
                 <Header/>
-                <main role="main" class="">
+                <main role="main" >
+                <div id="general">
                     <div class="max-w-5xl mb-4 mx-auto h-min">
                     <h1 class="text-3xl font-semibold  mt-12">General Info</h1>
                     <p class="mb-10">This page provides an overview of the processes of each supply chain step and general reguations by industry.</p>
-                        <div class="flex flex-col lg:flex-row h-min gap-x-10 quick-jump" >
+                        <div class="flex flex-col lg:flex-row h-min gap-x-10 quick-jump" role="region" >
                                 <p class="text-gray-700">QUICK JUMP:</p>
-                                <a href="#automotive_general_info" class="quick-jump text-gray-700 hover:text-blue-800 hover:underline">Automotive Manufacturing</a>
-                                <a href="#technology_general_info" class="quick-jump text-gray-700 hover:text-blue-800 hover:underline">Technology</a>
+                                <a href="#automotive_general_info" class="quick-jump font-semibold text-gray-800 hover:text-blue-800 hover:underline">Automotive Manufacturing</a>
+                                <a href="#technology_general_info" class="quick-jump font-semibold  text-gray-800 hover:text-blue-800 hover:underline">Technology</a>
                             </div>
                     </div>
                    
@@ -63,8 +64,8 @@ export default class General extends Component {
                                         General Regulations
                                     </h4>
                                     <ul class="text-left py-5 text-gray-600 list-disc text-md">
-                                        <li class="text-gray-900 font-bold text-md">
-                                            <a class="underline"
+                                        <li class="text-gray-600 text-md">
+                                            <a class="underline text-[#6366F1]"
                                                 href="https://unece.org/wp29-introduction"
                                                 target="_blank"
                                             >
@@ -78,7 +79,7 @@ export default class General extends Component {
                                         </li>
                                         <li>
                                              <a
-                                                class="text-gray-600 text-md underline"
+                                                class="text-[#6366F1] text-md underline"
                                                 href="https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs"
                                                 target="_blank"
                                             >
@@ -89,7 +90,7 @@ export default class General extends Component {
                                         </li>
                                         <li>
                                             <a
-                                                class="text-gray-600 text-md underline"
+                                                class="text-[#6366F1] text-md underline"
                                                 href="https://gdpr.eu/checklist"
                                                 target="_blank"
                                             >
@@ -101,7 +102,7 @@ export default class General extends Component {
                                         </li>
                                         <li class="text-md">
                                             <a
-                                                class="text-gray-600 text-md underline"
+                                                class="text-[#6366F1] text-md underline"
                                                 href="https://oag.ca.gov/privacy/ccpa"
                                                 target="_blank"
                                             >
@@ -112,7 +113,7 @@ export default class General extends Component {
                                         </li>
                                         <li>
                                             <a
-                                                class="text-gray-600 text-md underline"
+                                                class="text-[#6366F1] text-md underline"
                                                 href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security"
                                                 target="_blank"
                                             >
@@ -124,7 +125,7 @@ export default class General extends Component {
                                         </li>
                                         <li>
                                             <a
-                                                class="text-gray-600 text-md underline"
+                                                class="text-[#6366F1] text-md underline"
                                                 href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update"
                                             >
                                                 R156
@@ -135,9 +136,9 @@ export default class General extends Component {
                                             over-the-air updates.
                                         </li>
                                     </ul>
-                                    <ul class="text-left text-gray-600 list-disc">
-                                        <li class="text-gray-900 font-bold">
-                                            <a  class="underline"
+                                
+                                        <p class="text-gray-900 ">
+                                            <a  class="underline text-[#6366F1] font-bold" 
                                                 href="https://www2.deloitte.com/content/dam/Deloitte/us/Documents/manufacturing/us-manu-cyber-risk-in-advanced-manufacturing.pdf#page=18"
                                                 target="_blank"
                                             >
@@ -146,7 +147,7 @@ export default class General extends Component {
                                             : Requires all public companies to disclose the level of
                                             cybersecurity expertise in board of directors,
                                             specifically:
-                                        </li>
+                                            </p>
                                         <ol class="list-decimal">
                                             <li>
                                                 Disclose whether any member of the governing body, such
@@ -165,7 +166,7 @@ export default class General extends Component {
                                                 nominating committee
                                             </li>
                                         </ol>
-                                    </ul>
+                                   
                                 </div>
                             </div>
 
@@ -221,7 +222,7 @@ export default class General extends Component {
                                             <ul>
                                                 <li>
                                                     {" "}
-                                                    <a  class="underline"
+                                                    <a  class='underline text-[#6366F1]'
                                                         href="https://www.nist.gov/mep/successstories/2020/iatf-16949-and-core-tools-training-essential-tier-1-automotive-supplier"
                                                         target="_blank"
                                                     >
@@ -232,7 +233,7 @@ export default class General extends Component {
                                                 </li>
                                                 <li>
                                                     {" "}
-                                                    <a  class="underline"
+                                                    <a  class='underline text-[#6366F1]'
                                                         href="https://www.amatechinc.com/resources/blog/returnable-packaging/tier-1-2-3-automotive-industry-supply-chain-explained"
                                                         target="_blank"
                                                     >
@@ -243,7 +244,7 @@ export default class General extends Component {
                                                 </li>
                                                 <li>
                                                     {" "}
-                                                    <a  class="underline"
+                                                    <a  class='underline text-[#6366F1]'
                                                         href="https://www.amatechinc.com/resources/blog/returnable-packaging/tier-1-2-3-automotive-industry-supply-chain-explained"
                                                         target="_blank"
                                                     >
@@ -309,7 +310,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             The {" "}
-                                             <a  class="underline"
+                                             <a  class='underline text-[#6366F1]'
                                                         href="https://jfrog.com/blog/log4shell-0-day-vulnerability-all-you-need-to-know/"
                                                         target="_blank"
                                                     >
@@ -344,7 +345,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             The{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf"
                                                 target="_blank"
                                             >
@@ -380,7 +381,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             The{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf"
                                                 target="_blank"
                                             >
@@ -410,7 +411,7 @@ export default class General extends Component {
                                     <h3 class="text-2xl text-left font-semibold text-primary-dark-gray ">Overview</h3>
                                     <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                         The{" "}
-                                        <a
+                                        <a class='underline text-[#6366F1]'
                                             href="https://www.sonatype.com/resources/software-supply-chain- management-part-1-what-is-a-software-supply-chain"
                                             target="_blank"
                                         >
@@ -449,9 +450,9 @@ export default class General extends Component {
                                             Planning
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="www.gep.com/blog/technology/supply-chain-planning- what-why-and-how"
-                                                target="-blank"
+                                                target="_blank"
                                             >
                                                 Planning
                                             </a>{" "}
@@ -493,7 +494,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             For{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="blog.sonatype.com/software-supply-chain-a-definition-and-introductory-guide"
                                                 target="_blank"
                                             >
@@ -528,7 +529,7 @@ export default class General extends Component {
                                             Inventory Management
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://truedigitalsecurity.com/blog/a- better-way-to-manage-your-software-inventory"
                                                 target="_blank"
                                             >
@@ -578,7 +579,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             The{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf"
                                                 target="_blank'"
                                             >
@@ -614,7 +615,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             In the{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508_1.pdf"
                                                 target="blank"
                                             >
@@ -650,7 +651,7 @@ export default class General extends Component {
                                         </h3>
                                         <p class="text-gray-600 my-4 text-left sm:w-3/4 lg:w-full">
                                             For{" "}
-                                            <a
+                                            <a class='underline text-[#6366F1]'
                                                 href="https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_
                                             attacks_508_1.pdf"
                                                 target="_blank"
@@ -672,6 +673,7 @@ export default class General extends Component {
                             </div>
                         </div>
                     </section>
+                    </div>
                 </main>
             </Fragment>
         );

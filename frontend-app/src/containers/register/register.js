@@ -111,9 +111,10 @@ export default class register extends Component {
             <Fragment>
             <Toast ref={(el) => this.toast = el} />
             <div className="container">
-                <div className='li_image_container'>
-                    <img src={logo_refernce} alt="CS Logo" width="100px" height="98px" />
+                <div className='li_image_container' role='presentation'>
+                    <img src={logo_refernce} alt="" width="100px" height="98px" role='presentation' />
                 </div>
+                <main>
                 <div className='main_card'>
                     <div id="register_container">
                         <div className="container_welcome">
@@ -122,9 +123,9 @@ export default class register extends Component {
                         <h1 data-testid="sign-in-test" id="sign_in">Register </h1>
                          <div class="register_item" >
                         <span className="p_float_label">
-                        <p id='label_text'>Email Address</p>   
+                        <p class='label_text'>Email Address</p>   
                         <InputText
-                            id="form_input"
+                            class="form_input"
                             placeholder='Email Address'
                             value={this.state.email}
                             onChange={(e) => this.setState({ email: e.target.value })}
@@ -134,9 +135,9 @@ export default class register extends Component {
                         </div>
                         <div class="register_item" >
                         <span className="p_float_label">
-                        <p id='label_text'>Username</p>   
+                        <p class='label_text'>Username</p>   
                         <InputText
-                            id="form_input"
+                             class="form_input"
                             placeholder='Username'
                             value={this.state.username}
                             onChange={(e) => this.setState({ username: e.target.value })}
@@ -145,7 +146,7 @@ export default class register extends Component {
                         </span>
                         </div>
                         <div class="register_item" >
-                        <p id='label_text'>Password</p>
+                        <p  class='label_text'>Password</p>
                         <Password 
                             value={this.state.password}  
                             placeholder='Password'
@@ -155,7 +156,7 @@ export default class register extends Component {
                         </div>
 
                         <div class="register_item" >
-                        <p id='label_text'> Confirm Password</p>
+                        <p class='label_text'> Confirm Password</p>
                         <Password value={this.state.password2}
                             placeholder='Confirm your password'
                             onChange={(e) => this.setState({ password2: e.target.value })} toggleMask
@@ -175,8 +176,9 @@ export default class register extends Component {
                     </div>
                    
                 </div>
-                <div className='register_back' >
-                        <img id='register-image' src={register_background} alt="" />
+                </main>
+                <div className='register_back'  role='presentation'>
+                        <img id='register-image' src={register_background} alt=""  role='presentation'/>
 
                     </div>
 

@@ -9,7 +9,14 @@ h1, h2, h3 {
 p, li {
     font-family:'Work Sans', sans-serif;
 }
+
+div#general > a {
+    color: #6366F1 !important;
+    text-decoration: underline;
+}
+
 a:hover {
     color: blue;
     text-decoration: underline;
 }
+
