@@ -1,6 +1,6 @@
 # Deloitte - Cyber Attack in the Supply Chain
 
-## ITWS 6800 IT Master's Capstone
+## ITWS 4100/6800 IT Capstone
 
 ### The Team:
 
@@ -48,3 +48,5 @@ The solution developed was a website that displayed an interactive map of the di
 (https://csrc.nist.gov/publications/detail/nistir/8272/final)
 (https://csrc.nist.gov/projects/cyber-supply-chain-risk-management/federal-c-scrm)
 (https://csrc.nist.gov/projects/cyber-supply-chain-risk-management/ssca)
+
+Mockups can be found here: https://www.figma.com/file/c8lwnn6vANBs7WoZhMyLDt/wireframes-and-mockups?node-id=13%3A3698&t=dOvR5k7nc16AnICZ-1
